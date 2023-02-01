@@ -1,0 +1,97 @@
+---
+---
+
+@import "{{ site.theme }}";
+@import "variables";
+
+@font-face {
+  font-family: "VaultAlarm";
+  src: local("VaultAlarm-Regular"),
+        url("../fonts/VaultAlarm-Regular.woff") format("woff"), 
+        url("../fonts/VaultAlarm-Regular.woff2") format("woff2");
+}
+
+picture {
+  display: inline-block;
+  box-sizing: content-box;
+  object-fit: contain;
+
+  &.pad-bottom {
+    margin-bottom: 1rem;
+  }
+}
+
+.grid {
+  &.align-baseline {
+    align-items: baseline;
+  }
+}
+
+.linked, button {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+header {
+  nav a {
+    font-size: 0.9rem;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "VaultAlarm";
+
+  span {
+    font-family: var(--font-family);
+  }
+
+  &.subhead {
+    color: var(--dz-subtitle-color);
+  }
+}
+
+button, *[role="button"] {
+  &.black {
+    font-family: "VaultAlarm";
+    background-color: var(--dz-title-color);
+    border: none;
+
+    &:hover {
+      background-color: var(--dz-subtitle-color);
+    }
+  }
+
+  &.rounded {
+    border-radius: 2rem;
+  }
+}
+
+.caption {
+  color: var(--dz-subtext-color);
+}
+
+.container.readable {
+  max-width: 64ch;
+}
+
+footer {
+  margin-top: 2rem;
+
+  p {
+    font-size: 0.7rem;
+    color: var(--dz-color-subtext);
+  }
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+  button, *[role="button"] {
+    &.black {
+      color: #1a1a1c;
+    }
+  }
+}
+
+@import "layouts/home";
+
+@import "layouts/support";

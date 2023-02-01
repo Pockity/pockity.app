@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en-IN" }}">
+{%- include head.html -%}
+<body class="{% if page.style %}{{ page.style }} {% endif %}">
+  {%- include header.html -%}
+
+  <main>
+    <article class="page-content no-style"> 
+      {{ content }}
+    </div>
+    <section class="page-content">
+      <a href="#" onclick="window.history.back();">Back</a>
+    </section>
+  </main>
+
+  {%- include footer.html -%}
+</body>
+</html>
