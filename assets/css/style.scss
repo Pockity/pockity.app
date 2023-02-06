@@ -11,6 +11,11 @@
         url("../fonts/VaultAlarm-Regular.woff2") format("woff2");
 }
 
+html {
+  font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  quotes: "“" "”";
+}
+
 picture {
   display: inline-block;
   box-sizing: content-box;
@@ -40,7 +45,10 @@ header {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "VaultAlarm";
+  &.vault {
+    font-family: "VaultAlarm";
+    margin-bottom: var(--typography-spacing-vertical);
+  }
 
   span {
     font-family: var(--font-family);
@@ -73,6 +81,10 @@ button, *[role="button"] {
 
 .container.readable {
   max-width: 64ch;
+}
+
+.container.center {
+  text-align: center;
 }
 
 footer {

@@ -8,29 +8,28 @@
         <img src="/assets/images/home/appicon.png" srcset="/assets/images/home/appicon@2x.png 2x" width="200" height="200"/>
         <source media="(max-width: 600px)" srcset="/assets/images/home/appicon-half.png 1x, /assets/images/home/appicon.png 2x">
       </picture>
-      <h1 class="section-header-xl">Pockity</h1>
+      <h1 class="section-header-xl vault">Pockity</h1>
       <h2 class="subhead"><span>{{ site.description }}</span></h2>
     </div>
 
     {%- include storebuttons.html -%}
   </header>
   <main>
-    <div class="container">
-      {{ content }}
-    </div>
+    {{ content }}
 
     <div id="stagemanager" class="container-fluid no-padding">
       <div class="hero-image bottom">
         <picture>
-          <source media="(max-width: 600px)" srcset="/assets/images/home/stagemanager-400w.jpg 1x, /assets/images/home/stagemanager-800w 2x, /assets/images/home/stagemanager-1200w 3x" />
-          <img src="/assets/images/home/stagemanager.jpg" srcset="/assets/images/home/stagemanager@2x.jpg 2x, /assets/images/home/stagemanager@3x.jpg 3x" alt="Pockity running on iPadOS in Stage Manager Mode" width="1716" height="1080" />
+          <source media="(max-width: 600px)" srcset="/assets/images/home/stagemanager-400w.jpg 1x, /assets/images/home/stagemanager-800w.jpg 2x, /assets/images/home/stagemanager-1200w.jpg 3x" />
+          <source media="(min-width: 601px) and (max-width: 1130px)" srcset="/assets/images/home/stagemanager-800w.jpg 1x, /assets/images/home/stagemanager-1600w.jpg 2x, /assets/images/home/stagemanager@3x.jpg 3x" />
+          <img src="/assets/images/home/stagemanager.jpg" srcset="/assets/images/home/stagemanager@2x.jpg 2x, /assets/images/home/stagemanager@3x.jpg 3x" alt="Pockity running on iPadOS in Stage Manager Mode" width="1018" height="801" />
         </picture>
       </div>
-    </div>
 
-    <div class="container readable">
-      <h3>Stage Manager</h3>
-      <p>The perfect producivity companion works perfectly with Pockity, with support for multiple windows, keyboard & trackpad support, and keyboard shortcuts.</p>
+      <hgroup class="container readable">
+        <h3 class="section-header-l vault">Stage Manager</h3>
+        <p>The perfect producivity companion works perfectly with Pockity, with support for multiple windows, keyboard & trackpad, and keyboard shortcuts.</p>
+      </hgroup>
     </div>
 
     {%- include storebuttons.html -%}
