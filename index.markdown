@@ -67,6 +67,7 @@ style: home
       <h3 class="vault">Budgets</h3>
       <p>Categorize your expenses and track them across weekly or monthly budgets.</p>
       <picture class="pad-bottom">
+        <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/budgets-dark.jpg 1x, /assets/images/home/budgets-dark@2x.jpg 2x, /assets/images/home/budgets-dark@3x.jpg 3x" />
         <img src="/assets/images/home/budgets.jpg" srcset="/assets/images/home/budgets@2x.jpg 2x, /assets/images/home/budgets@3x.jpg 3x" alt="Representation of budgets in Pockity, displayed as a grid, from top-left: Groceries, Utilities, Car & Travel, and Leisure." width="493" height="208"/>
       </picture>
       <p>Budgets are flexible, you can go over them. We all have those days.</p>
@@ -76,6 +77,7 @@ style: home
         <h3 class="vault">Insights</h3>
         <p>Visualize spending habits across categories and accounts over different time periods.</p>
         <picture class="pad-bottom">
+          <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/insights-dark.jpg 1x, /assets/images/home/insights-dark@2x.jpg 2x, /assets/images/home/insights-dark@3x.jpg 3x" />
           <img src="/assets/images/home/insights.jpg" srcset="/assets/images/home/insights@2x.jpg 2x, /assets/images/home/insights@3x.jpg 3x" alt="Representation of insights from Pockity: Category wise spending and Account wise expenses and incomes." width="493" height="208"/>
         </picture>
         <p class="solo">Take learned decisions based on insights you gather from your spending habits.</p>
@@ -92,6 +94,7 @@ style: home
     <p>View trends for this week and month, or category budgets.</p>
   </hgroup>
   <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/widgets-dark.jpg 1x, /assets/images/home/widgets-dark@2x.jpg 2x, /assets/images/home/widgets-dark@3x.jpg 3x" />
     <img src="/assets/images/home/widgets.jpg" srcset="/assets/images/home/widgets@2x.jpg 2x, /assets/images/home/widgets@3x.jpg 3x"  alt="Image of light/dark mode selection" width="534" height="208"/>
   </picture>
   </div>
@@ -123,6 +126,7 @@ style: home
       <h4 class="vault">Stay Organized</h4>
       <p>Create multiple ledgers to separately track personal and business expenses.</p>
       <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/ledgers-dark.jpg 1x, /assets/images/home/ledgers-dark@2x.jpg 2x, /assets/images/home/ledgers-dark@3x.jpg 3x" />
         <img src="/assets/images/home/ledgers.jpg" srcset="/assets/images/home/ledgers@2x.jpg 2x, /assets/images/home/ledgers@3x.jpg 3x" alt="Image of light/dark mode selection" width="321" height="150"/>
       </picture>
     </div>
@@ -130,6 +134,7 @@ style: home
       <h4 class="vault">Automatic Backups</h4>
       <p>Automatic backups ensure your data is never lost. Restore with ease, anytime.</p>
       <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/backups-dark.jpg 1x, /assets/images/home/backups-dark@2x.jpg 2x, /assets/images/home/backups-dark@3x.jpg 3x" />
         <img src="/assets/images/home/backups.jpg" srcset="/assets/images/home/backups@2x.jpg 2x, /assets/images/home/backups@3x.jpg 3x" alt="Image of light/dark mode selection" width="321" height="150"/>
       </picture>
     </div>
@@ -137,6 +142,7 @@ style: home
       <h4 class="vault">Your Data</h4>
       <p>Export your data to JSON and CSV formats, or archives & attachments.<br/><br/></p>
       <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/exports-dark.jpg 1x, /assets/images/home/exports-dark@2x.jpg 2x, /assets/images/home/exports-dark@3x.jpg 3x" />
         <img src="/assets/images/home/exports.jpg" srcset="/assets/images/home/exports@2x.jpg 2x, /assets/images/home/exports@3x.jpg 3x" alt="Image of light/dark mode selection" width="321" height="150"/>
       </picture>
     </div>

@@ -102,6 +102,12 @@ footer {
       color: #1a1a1c;
     }
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    &.vault {
+      color: var(--dz-title-color);
+    }
+  }
 }
 
 @import "layouts/home";
