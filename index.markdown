@@ -7,8 +7,8 @@ style: home
 ---
 
 <picture>
-  <source media="(max-width: 600px)" srcset="/assets/images/home/hero-400w.jpg 1x, /assets/images/home/hero-800w.jpg 2x">
-  <source media="(min-width: 601px) and (max-width: 800px)" srcset="/assets/images/home/hero-800w.jpg 1x, /assets/images/home/hero@2x.jpg 2x">
+  <source media="(max-width: 600px)" srcset="/assets/images/home/hero-400w.jpg 1x, /assets/images/home/hero-800w.jpg 2x, /assets/images/home/hero-1600w.jpg 3x">
+  <source media="(min-width: 601px) and (max-width: 800px)" srcset="/assets/images/home/hero-800w.jpg 1x, /assets/images/home/hero-1600w.jpg 2x, /assets/images/home/hero@3x.jpg 3x">
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/hero-dark-400w.jpg 1x, /assets/images/home/hero-dark-800w.jpg 2x">
   <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/hero-dark-800w.jpg 1x, /assets/images/home/hero-dark@2x.jpg 2x">
   <source media="(min-width: 801px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/hero-dark.jpg 1x, /assets/images/home/hero-dark@2x.jpg 2x, /assets/images/home/hero-dark@3x.jpg 3x">
@@ -29,7 +29,7 @@ style: home
     </hgroup>
     <div class="image-wrapper" role="img">
       <picture>
-        <source media="(max-width: 600px)" srcset="/assets/images/home/editor-400w.jpg 1x, /assets/images/home/editor-800w.jpg 2x" />
+        <source media="(max-width: 600px)" srcset="/assets/images/home/editor-400w.jpg 1x, /assets/images/home/editor-800w.jpg 2x, /assets/images/home/editor-1600w.jpg 3x" />
         <source media="(min-width: 601px) and (max-width: 800px)" srcset="/assets/images/home/editor-800w.jpg 1x, /assets/images/home/editor-1600w.jpg 2x" />
         <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/editor-dark-400w.jpg 1x, /assets/images/home/editor-dark-800w.jpg 2x" />
         <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/editor-dark-800w.jpg 1x, /assets/images/home/editor-dark-1600w.jpg 2x" />
@@ -51,8 +51,8 @@ style: home
 
   <div class="image-wrapper" role="img">
     <picture id="home-transactions">
-      <source media="(max-width: 600px)" srcset="/assets/images/home/transactions-400w.jpg 1x, /assets/images/home/transactions-800w.jpg 2x" />
-      <source media="(min-width: 601px) and (max-width: 800px)" srcset="/assets/images/home/transactions-800w.jpg 1x, /assets/images/home/transactions-1600w.jpg 2x" />
+      <source media="(max-width: 600px)" srcset="/assets/images/home/transactions-400w.jpg 1x, /assets/images/home/transactions-800w.jpg 2x, /assets/images/home/transactions-1600w.jpg 3x" />
+      <source media="(min-width: 601px) and (max-width: 800px)" srcset="/assets/images/home/transactions-800w.jpg 1x, /assets/images/home/transactions-1600w.jpg 2x, /assets/images/home/transactions@3x.jpg 3x" />
       <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/transactions-dark-400w.jpg 1x, /assets/images/home/transactions-dark-800w.jpg 2x" />
       <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/transactions-dark-800w.jpg 1x, /assets/images/home/transactions-dark-1600w.jpg 2x" />
       <source media="(min-width: 801px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/transactions-dark.jpg 1x, /assets/images/home/transactions-dark@2x.jpg 2x" />
@@ -109,7 +109,7 @@ style: home
     </hgroup>
     <div class="image-wrapper" role="img">
       <picture>
-        <source media="(max-width: 600px)" srcset="/assets/images/home/recurring-400w.jpg 1x, /assets/images/home/recurring-800w.jpg 2x" />
+        <source media="(max-width: 600px)" srcset="/assets/images/home/recurring-400w.jpg 1x, /assets/images/home/recurring-800w.jpg 2x, /assets/images/home/recurring-1600w.jpg 3x" />
         <source media="(min-width: 601px) and (max-width: 800px)" srcset="/assets/images/home/recurring-800w.jpg 1x, /assets/images/home/recurring-1600w.jpg 2x" />
         <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/recurring-dark-400w.jpg 1x, /assets/images/home/recurring-dark-800w.jpg 2x" />
         <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/recurring-dark-800w.jpg 1x, /assets/images/home/recurring-dark-1600w.jpg 2x" />
@@ -158,7 +158,7 @@ style: home
     </hgroup>
     <div class="image-wrapper" role="img">
       <picture>
-        <source media="(max-width: 600px)" srcset="/assets/images/home/notifications-400w.jpg 1x, /assets/images/home/notifications-800w.jpg 2x" />
+        <source media="(max-width: 600px)" srcset="/assets/images/home/notifications-400w.jpg 1x, /assets/images/home/notifications-800w.jpg 2x, /assets/images/home/notifications-1600w.jpg 3x" />
         <source media="(min-width: 601px) and (max-width: 800px)" srcset="/assets/images/home/notifications-800w.jpg 1x, /assets/images/home/notifications-1600w.jpg 2x" />
         <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/notifications-dark-400w.jpg 1x, /assets/images/home/notifications-dark-800w.jpg 2x" />
         <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/notifications-dark-800w.jpg 1x, /assets/images/home/notifications-dark-1600w.jpg 2x" />
