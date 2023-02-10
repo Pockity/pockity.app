@@ -26,9 +26,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://pockity.app" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: pockityapp
 github_username:  pockity
-
-site:
- - url: "https://pockity.app"
+keywords: pockity,budget,manager,finance,tracker,expense,expenses,subscriptions,accounts,category,categories
 
 # Build settings
 plugins:
