@@ -133,6 +133,14 @@ body.home {
     }
   }
 
+  small:not(.section-title) {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-family: inherit;
+    font-weight: inherit;
+    color: var(--dz-subtext-color);
+  }
+
   .section-title {
     text-transform: uppercase;
     letter-spacing: 0.025rem;
@@ -244,10 +252,21 @@ body.home {
       }
     }
 
+    .section-header-xxl {
+      font-size: 40pt;
+    }
+
+    small:not(.section-title), .section-title {
+      font-size: 1rem;
+    }
+
     #home-transactions {
+      position: relative;
+      left: calc((200vw - 100%) * -0.5);
+
       img {
-        max-width: 150vw;
-        margin-left: -25vw;
+        max-width: 200vw;
+        object-fit: cover;
       }
     }
 
@@ -256,11 +275,19 @@ body.home {
     }
 
     h3.vault {
-      font-size: 3.75rem;
+      font-size: 3rem;
+
+      &.mobile-medium {
+        font-size: 2rem;
+      }
     }
 
     h4.vault {
       font-size: 2.5rem;
+    }
+
+    #home-design .container:first-of-type {
+      margin-bottom: 2rem;
     }
 
     #tiny-feat {
@@ -281,6 +308,32 @@ body.home {
         max-width: 100vw;
         object-fit: cover;
       }
+    }
+  }
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+  body.home {
+    main > picture + .container {
+      padding-bottom: 2.5rem;
+    }
+
+    #home-editor {
+      .image-wrapper {
+        position: relative;
+        left: calc((100vw - 100%) * 0.5);
+      }
+    }
+
+    #home-recurring, #home-reminders {
+      .image-wrapper {
+        position: relative;
+        left: calc(((100vw - 100%) * 0.5) + 0.75rem); 
+      }
+    }
+
+    #stagemanager {
+      padding-top: calc((100vh - 100%) * 0.5);
     }
   }
 }

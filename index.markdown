@@ -26,7 +26,7 @@ style: home
       <small class="section-title spacer-bot" id="cap-editor">Editor</small>
       <h3 class="section-header-m vault">Fluid. Fast. Functional.</h3>
       <p>Enter expenses, account transfers, and income, seamlessly from a single editor. Pockity can remember the last account and category you used, so adding new expenses is simplified: especially during travels.</p>
-      <p>Attach location information, receipts, or other files to expenses. Easily lookup expenses by locations.</p>
+      <small>Attach location information, receipts, or other files to expenses. Easily lookup expenses by locations.</small>
     </hgroup>
     <div class="image-wrapper" role="img">
       <picture>
@@ -41,20 +41,20 @@ style: home
   </div>
 </div>
 
-<div>
+<div id="home-design">
   <div class="container pic-bottom">
     <hgroup>
       <small class="section-title spacer-bot" id="cap-transactions">Design</small>
       <h3 class="section-header-l vault">Spend. Transfer. Earn.</h3>
       <p>Pockity supports three core transaction types which adapt to a variety of situations when dealing with money and funds.</p>
-      <p><a href="https://faq.pockity.app/entries/" target="_blank" title="Entries - Pockity">Learn more about entry types</a> in the user guide.</p>
+      <small><a href="https://faq.pockity.app/entries/" target="_blank" title="Entries - Pockity">Learn more about entry types</a> in the user guide.</small>
     </hgroup>
   </div>
 
   <div class="image-wrapper" role="img">
     <picture id="home-transactions">
-      <source media="(max-width: 600px)" srcset="/assets/images/home/transactions-400w.jpg 1x, /assets/images/home/transactions-800w.jpg 2x, /assets/images/home/transactions-1600w.jpg 3x" />
-      <source media="(min-width: 601px) and (max-width: 800px)" srcset="/assets/images/home/transactions-800w.jpg 1x, /assets/images/home/transactions-1600w.jpg 2x, /assets/images/home/transactions@3x.jpg 3x" />
+      <source media="(max-width: 600px)" srcset="/assets/images/home/transactions-400w.jpg 1x, /assets/images/home/transactions@2x.jpg 2x, /assets/images/home/transactions@3x.jpg 3x" />
+      <source media="(min-width: 601px) and (max-width: 800px)" srcset="/assets/images/home/transactions-800w.jpg 1x, /assets/images/home/transactions@2x.jpg 2x, /assets/images/home/transactions@3x.jpg 3x" />
       <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/transactions-dark-400w.jpg 1x, /assets/images/home/transactions-dark-800w.jpg 2x" />
       <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/transactions-dark-800w.jpg 1x, /assets/images/home/transactions-dark-1600w.jpg 2x" />
       <source media="(min-width: 801px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/transactions-dark.jpg 1x, /assets/images/home/transactions-dark@2x.jpg 2x" />
@@ -66,7 +66,7 @@ style: home
 <div class="container">
   <div class="grid">
     <div>
-      <h3 class="vault">Budgets</h3>
+      <h3 class="vault mobile-medium">Budgets</h3>
       <p>Categorize your expenses and track them across weekly or monthly budgets.</p>
       <picture class="pad-bottom">
         <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/budgets-dark.jpg 1x, /assets/images/home/budgets-dark@2x.jpg 2x, /assets/images/home/budgets-dark@3x.jpg 3x" />
@@ -76,7 +76,7 @@ style: home
     </div>
     <div>
       <div>
-        <h3 class="vault">Insights</h3>
+        <h3 class="vault mobile-medium">Insights</h3>
         <p>Visualize spending habits across categories and accounts over different time periods.</p>
         <picture class="pad-bottom">
           <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/insights-dark.jpg 1x, /assets/images/home/insights-dark@2x.jpg 2x, /assets/images/home/insights-dark@3x.jpg 3x" />
@@ -126,7 +126,7 @@ style: home
 <div class="container" id="tiny-feat">
   <div class="grid">
     <div class="x-large-border">
-      <h4 class="vault">Stay Organized</h4>
+      <h4 class="vault mobile-medium">Stay Organized</h4>
       <p>Create multiple ledgers to separately track personal and business expenses.</p>
       <picture>
           <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/ledgers-dark.jpg 1x, /assets/images/home/ledgers-dark@2x.jpg 2x, /assets/images/home/ledgers-dark@3x.jpg 3x" />
@@ -134,7 +134,7 @@ style: home
       </picture>
     </div>
     <div class="x-large-border">
-      <h4 class="vault">Automatic Backups</h4>
+      <h4 class="vault mobile-medium">Automatic Backups</h4>
       <p>Automatic backups ensure your data is never lost. Restore with ease, anytime.</p>
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/backups-dark.jpg 1x, /assets/images/home/backups-dark@2x.jpg 2x, /assets/images/home/backups-dark@3x.jpg 3x" />
@@ -142,7 +142,7 @@ style: home
       </picture>
     </div>
     <div class="x-large-border">
-      <h4 class="vault">Your Data</h4>
+      <h4 class="vault mobile-medium">Your Data</h4>
       <p>Export your data to JSON and CSV formats, or archives & attachments.<br/><br/></p>
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/exports-dark.jpg 1x, /assets/images/home/exports-dark@2x.jpg 2x, /assets/images/home/exports-dark@3x.jpg 3x" />
