@@ -133,6 +133,39 @@ body.home {
     }
   }
 
+  .section-title {
+    text-transform: uppercase;
+    letter-spacing: 0.025rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--dz-subtext-color);
+
+    &.spacer-bot {
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+  }
+
+  #cap-editor {
+    @include gradient-text-linear(0deg, #8659FF, #2D56FF);
+  }
+
+  #cap-transactions {
+   @include gradient-text-linear(0deg, #FF7559, #FF2DB7); 
+  }
+
+  #cap-recurring {
+   @include gradient-text-linear(0deg, #3DCD14, #2DB8FF); 
+  }
+
+  #cap-notifications {
+   @include gradient-text-linear(0deg, #FF5A5A, #FFA752); 
+  }
+
+  #cap-stagemanager {
+    @include gradient-text-linear(90deg, #333, #ccc); 
+  }
+
   #tiny-feat {
     text-align: center;
   }

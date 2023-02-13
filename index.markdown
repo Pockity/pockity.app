@@ -23,6 +23,7 @@ style: home
 <div class="container fluid">
   <div class="pic-right" id="home-editor">
     <hgroup class="v-center">
+      <small class="section-title spacer-bot" id="cap-editor">Editor</small>
       <h3 class="section-header-m vault">Fluid. Fast. Functional.</h3>
       <p>Enter expenses, account transfers, and income, seamlessly from a single editor. Pockity can remember the last account and category you used, so adding new expenses is simplified: especially during travels.</p>
       <p>Attach location information, receipts, or other files to expenses. Easily lookup expenses by locations.</p>
@@ -43,6 +44,7 @@ style: home
 <div>
   <div class="container pic-bottom">
     <hgroup>
+      <small class="section-title spacer-bot" id="cap-transactions">Design</small>
       <h3 class="section-header-l vault">Spend. Transfer. Earn.</h3>
       <p>Pockity supports three core transaction types which adapt to a variety of situations when dealing with money and funds.</p>
       <p><a href="https://faq.pockity.app/entries/" target="_blank" title="Entries - Pockity">Learn more about entry types</a> in the user guide.</p>
@@ -103,6 +105,7 @@ style: home
 <div class="container fluid clear-bot">
   <div class="pic-right" id="home-recurring">
     <hgroup class="v-center">
+      <small class="section-title spacer-bot" id="cap-recurring">Always Prepared</small>
       <h3 class="section-header-l vault">Automate</h3>
       <p>Create repeating expenses for loan re-payments, magazines, utility bills, app subscriptions and a lot more.</p>
       <p>Pockity schedules notifications for upcoming recurring expenses, one day prior to the actual date, so you can ensure sufficient balances and not worry about overdraft fees.</p>
@@ -152,6 +155,7 @@ style: home
 <div class="container fluid clear-bot">
   <div class="pic-right" id="home-reminders">
     <hgroup class="v-center">
+      <small class="section-title spacer-bot" id="cap-notifications">Always Aware</small>
       <h3 class="section-header-l vault">Never Miss an Expense</h3>
       <p>Schedule daily reminders to help you form a habit of adding expenses.</p>
       <p>Automatic notifications for upcoming recurring expenses, so you can ensure sufficient balances and not worry about overdraft fees.</p>
@@ -167,4 +171,20 @@ style: home
       </picture>
     </div>
   </div>
+</div>
+
+<div id="stagemanager" class="container-fluid no-padding">
+  <div class="hero-image bottom">
+    <picture>
+      <source media="(max-width: 600px)" srcset="/assets/images/home/stagemanager-400w.jpg 1x, /assets/images/home/stagemanager-800w.jpg 2x, /assets/images/home/stagemanager-1600w.jpg 3x" />
+      <source media="(min-width: 601px) and (max-width: 1130px)" srcset="/assets/images/home/stagemanager-800w.jpg 1x, /assets/images/home/stagemanager-1600w.jpg 2x, /assets/images/home/stagemanager@3x.jpg 3x" />
+      <img src="/assets/images/home/stagemanager.jpg" srcset="/assets/images/home/stagemanager@2x.jpg 2x, /assets/images/home/stagemanager@3x.jpg 3x" alt="Pockity running on iPadOS in Stage Manager Mode" width="1018" height="801" />
+    </picture>
+  </div>
+
+  <hgroup class="container readable">
+    <small class="section-title spacer-bot" id="cap-stagemanager">Great, isn't it!</small>
+    <h3 class="section-header-l vault">Stage Manager</h3>
+    <p>The perfect producivity companion works perfectly with Pockity, with support for multiple windows, keyboard & trackpad, and keyboard shortcuts.</p>
+  </hgroup>
 </div>
