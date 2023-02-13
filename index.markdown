@@ -105,7 +105,7 @@ style: home
 <div class="container fluid clear-bot">
   <div class="pic-right" id="home-recurring">
     <hgroup class="v-center">
-      <small class="section-title spacer-bot" id="cap-recurring">Always Prepared</small>
+      <small class="section-title spacer-bot" id="cap-recurring">Recurring Expenses</small>
       <h3 class="section-header-l vault">Automate</h3>
       <p>Create repeating expenses for loan re-payments, magazines, utility bills, app subscriptions and a lot more.</p>
       <p>Pockity schedules notifications for upcoming recurring expenses, one day prior to the actual date, so you can ensure sufficient balances and not worry about overdraft fees.</p>
@@ -155,7 +155,7 @@ style: home
 <div class="container fluid clear-bot">
   <div class="pic-right" id="home-reminders">
     <hgroup class="v-center">
-      <small class="section-title spacer-bot" id="cap-notifications">Always Aware</small>
+      <small class="section-title spacer-bot" id="cap-notifications">Notifications</small>
       <h3 class="section-header-l vault">Never Miss an Expense</h3>
       <p>Schedule daily reminders to help you form a habit of adding expenses.</p>
       <p>Automatic notifications for upcoming recurring expenses, so you can ensure sufficient balances and not worry about overdraft fees.</p>
