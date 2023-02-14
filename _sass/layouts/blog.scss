@@ -1,0 +1,29 @@
+.post-list {
+  padding-left: 0;
+  li {
+    list-style: none;
+
+    .post-meta {
+      display: block;
+      color: var(--dz-subtext-color);
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.rss-subscribe {
+  font-size: 0.8rem;
+  background: var(--dz-grouped-background-color);
+  display: inline-block;
+  border-radius: 5pt;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--dz-border-color);
+}
+
+article {
+  margin: 0 auto 1rem;
+  padding: 1rem 0;
+  box-shadow: none;
+  border-radius: 0;
+  background: var(--dz-background-color);
+}

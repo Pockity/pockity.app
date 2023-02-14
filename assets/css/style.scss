@@ -42,6 +42,15 @@ header {
   nav a {
     font-size: 0.9rem;
   }
+
+  #logo-title {
+    display: flex;
+    align-items: center;
+
+    h1 {
+      margin-bottom: 0;
+    }
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -111,5 +120,5 @@ footer {
 }
 
 @import "layouts/home";
-
+@import "layouts/blog";
 @import "layouts/support";

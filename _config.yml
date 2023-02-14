@@ -32,7 +32,9 @@ keywords: pockity,budget,manager,finance,tracker,expense,expenses,subscriptions,
 plugins:
   - jekyll-local-theme
 
-include: ['_pages']  
+permalink: /blog/:year-:month-:day/:title/
+
+include: ['_pages', 'blog']  
 
 defaults:
 - scope:

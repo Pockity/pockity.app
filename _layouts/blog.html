@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en-IN" }}">
+{%- include head.html -%}
+<body class="{% if page.style %}{{ page.style }} {% endif %}">
+  {%- include blogHeader.html -%}
+  <main class="container readable">
+    {%- if site.posts.size > 0 -%}
+    <ul class="post-list">
+      {%- for post in site.posts -%}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <h3>
+          <a class="post-link" href="{{ post.url | absolute_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        <small class="post-meta">{{ post.date | date: date_format }}</small>
+        {{ post.excerpt }}
+      </li>
+      {%- endfor -%}
+    </ul>
+  </main>
+  <div class="container readable" id="blog-footer-rss">
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  </div>
+  {%- endif -%}
+  <div class="container readable">
+    {%- include footer.html -%}
+  </div>
+</body>
+</html>
