@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "Hello There"
+date:   2023-03-23 12:30:00 +0530
+categories: jekyll update
+---
+Hello there! I'm glad to be able to finally get down and write about Pockity's release. 
+
+A few quick links to get you started:  
+- [Marketing Page](https://pockity.app)  
+- [FAQ & Tips](https://faq.pockity.app)  
+- [Entry Types](https://faq.pockity.app/entries/)  
+- [Account Transfers](https://faq.pockity.app/entries/transfers/)  
+
+If you have any questions about the app or feature suggestions, please reach out to me at [support@pockity.app](mailto:support@pockity.app).
+
+If you'd like to help with the localisation efforts of the app, please check the [Github Repo](https://github.com/Pockity/Localisations).
+
+And finally, if you're a student, please reach out to me, I'd be happy to give a discount for **Pockity+**.
