@@ -12,7 +12,7 @@ style: home
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/hero-dark-400w.jpg 1x, /assets/images/home/hero-dark-800w.jpg 2x">
   <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/hero-dark-800w.jpg 1x, /assets/images/home/hero-dark@2x.jpg 2x">
   <source media="(min-width: 801px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/hero-dark.jpg 1x, /assets/images/home/hero-dark@2x.jpg 2x, /assets/images/home/hero-dark@3x.jpg 3x">
-  <img src="/assets/images/home/hero.jpg" srcset="/assets/images/home/hero@2x.jpg 2x, /assets/images/home/hero@3x.jpg 3x" width="1130" height="712" alt="Pockity running on an iPad Pro and iPhone 14 Pro"/>
+  <img src="/assets/images/home/hero.jpg" srcset="/assets/images/home/hero@2x.jpg 2x, /assets/images/home/hero@3x.jpg 3x" width="1130" height="712" alt="Pockity's ledger timeline displayed on an iPad Pro 12.9 inches and iPhone 14 Pro"/>
 </picture>
 
 <div class="container readable center">
@@ -58,7 +58,7 @@ style: home
       <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/transactions-dark-400w.jpg 1x, /assets/images/home/transactions-dark-800w.jpg 2x" />
       <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/transactions-dark-800w.jpg 1x, /assets/images/home/transactions-dark-1600w.jpg 2x" />
       <source media="(min-width: 801px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/transactions-dark.jpg 1x, /assets/images/home/transactions-dark@2x.jpg 2x" />
-      <img src="/assets/images/home/transactions.jpg" srcset="/assets/images/home/transactions@2x.jpg 2x" alt="Graphic representation of Pockity's Entry Editor" width="1552" height="1058" class="center-t"/>
+      <img src="/assets/images/home/transactions.jpg" srcset="/assets/images/home/transactions@2x.jpg 2x" alt="Pockity's User Interface design displayed in a three by two grid of iPad Pros in portrait and landscape orientations. From top-left: Recurring, Entries, Categories, Table view, Split View mode and Category entries view." width="1552" height="1058" class="center-t"/>
     </picture>
   </div>
 </div>
@@ -97,7 +97,7 @@ style: home
   </hgroup>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/widgets-dark.jpg 1x, /assets/images/home/widgets-dark@2x.jpg 2x, /assets/images/home/widgets-dark@3x.jpg 3x" />
-    <img src="/assets/images/home/widgets.jpg" srcset="/assets/images/home/widgets@2x.jpg 2x, /assets/images/home/widgets@3x.jpg 3x"  alt="Image of light/dark mode selection" width="534" height="208"/>
+    <img src="/assets/images/home/widgets.jpg" srcset="/assets/images/home/widgets@2x.jpg 2x, /assets/images/home/widgets@3x.jpg 3x"  alt="Widgets offered by Pockity. From left-to-right: Weekly & Monthly Overview, and Category budgets." width="534" height="208"/>
   </picture>
   </div>
 </div>
@@ -117,7 +117,7 @@ style: home
         <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/recurring-dark-400w.jpg 1x, /assets/images/home/recurring-dark-800w.jpg 2x" />
         <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/recurring-dark-800w.jpg 1x, /assets/images/home/recurring-dark-1600w.jpg 2x" />
         <source media="(min-width: 801px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/recurring-dark.jpg 1x, /assets/images/home/recurring-dark@2x.jpg 2x" />
-        <img src="/assets/images/home/recurring.jpg" srcset="/assets/images/home/recurring@2x.jpg 2x, /assets/images/home/recurring@3x.jpg 3x" alt="Graphic representation of Pockity's Entry Editor" width="716" height="611"/>
+        <img src="/assets/images/home/recurring.jpg" srcset="/assets/images/home/recurring@2x.jpg 2x, /assets/images/home/recurring@3x.jpg 3x" alt="Recurring expeneses grid and entries automatically generated from such templates." width="716" height="611"/>
       </picture>
     </div>
   </div>
@@ -130,7 +130,7 @@ style: home
       <p>Create multiple ledgers to separately track personal and business expenses.</p>
       <picture>
           <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/ledgers-dark.jpg 1x, /assets/images/home/ledgers-dark@2x.jpg 2x, /assets/images/home/ledgers-dark@3x.jpg 3x" />
-        <img src="/assets/images/home/ledgers.jpg" srcset="/assets/images/home/ledgers@2x.jpg 2x, /assets/images/home/ledgers@3x.jpg 3x" alt="Image of light/dark mode selection" width="321" height="150"/>
+        <img src="/assets/images/home/ledgers.jpg" srcset="/assets/images/home/ledgers@2x.jpg 2x, /assets/images/home/ledgers@3x.jpg 3x" alt="Graphical representation of multiple ledgers in Pockity" width="321" height="150"/>
       </picture>
     </div>
     <div class="x-large-border">
@@ -138,7 +138,7 @@ style: home
       <p>Automatic backups ensure your data is never lost. Restore with ease, anytime.</p>
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/backups-dark.jpg 1x, /assets/images/home/backups-dark@2x.jpg 2x, /assets/images/home/backups-dark@3x.jpg 3x" />
-        <img src="/assets/images/home/backups.jpg" srcset="/assets/images/home/backups@2x.jpg 2x, /assets/images/home/backups@3x.jpg 3x" alt="Image of light/dark mode selection" width="321" height="150"/>
+        <img src="/assets/images/home/backups.jpg" srcset="/assets/images/home/backups@2x.jpg 2x, /assets/images/home/backups@3x.jpg 3x" alt="Graphical representation of automatic backups" width="321" height="150"/>
       </picture>
     </div>
     <div class="x-large-border">
@@ -146,7 +146,7 @@ style: home
       <p>Export your data to JSON and CSV formats, or archives & attachments.<br/><br/></p>
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/exports-dark.jpg 1x, /assets/images/home/exports-dark@2x.jpg 2x, /assets/images/home/exports-dark@3x.jpg 3x" />
-        <img src="/assets/images/home/exports.jpg" srcset="/assets/images/home/exports@2x.jpg 2x, /assets/images/home/exports@3x.jpg 3x" alt="Image of light/dark mode selection" width="321" height="150"/>
+        <img src="/assets/images/home/exports.jpg" srcset="/assets/images/home/exports@2x.jpg 2x, /assets/images/home/exports@3x.jpg 3x" alt="Graphical representation of data exports" width="321" height="150"/>
       </picture>
     </div>
   </div>
@@ -167,7 +167,7 @@ style: home
         <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/notifications-dark-400w.jpg 1x, /assets/images/home/notifications-dark-800w.jpg 2x" />
         <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/notifications-dark-800w.jpg 1x, /assets/images/home/notifications-dark-1600w.jpg 2x" />
         <source media="(min-width: 801px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/notifications-dark.jpg 1x, /assets/images/home/notifications-dark@2x.jpg 2x" />
-        <img src="/assets/images/home/notifications.jpg" srcset="/assets/images/home/notifications@2x.jpg 2x, /assets/images/home/notifications@3x.jpg 3x" alt="Graphic representation of Pockity's Entry Editor" width="716" height="608"/>
+        <img src="/assets/images/home/notifications.jpg" srcset="/assets/images/home/notifications@2x.jpg 2x, /assets/images/home/notifications@3x.jpg 3x" alt="From left-to-right: Pockity's user interface for scheduling reminders, and notifications for recurring expenses on the iOS homescreen." width="716" height="608"/>
       </picture>
     </div>
   </div>
