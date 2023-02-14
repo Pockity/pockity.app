@@ -291,6 +291,10 @@ body.home {
     }
 
     #tiny-feat {
+      .grid .x-large-border:last-of-type p br {
+        display: none;
+      }
+      
       .x-large-border:not(:last-of-type) {
         margin-bottom: 2rem;
       }
@@ -312,7 +316,41 @@ body.home {
   }
 }
 
-@media (max-width: 767px) and (orientation: portrait) {
+@media (min-width: 601px) and (max-width: 768px) and (orientation: portrait) {
+  body.home {
+    main > picture {
+      position: relative;
+      left: 2.5rem;
+    }
+
+    #home-fence, #home-widgets {
+      text-align: center; 
+    }
+
+    #tiny-feat {
+      .grid .x-large-border {
+        margin-bottom: 3rem;
+      }
+
+      .grid:last-of-type .x-large-border:last-of-type {
+        margin-bottom: 0;
+      }
+
+      .grid .x-large-border:last-of-type p br {
+        display: none;
+      }
+    }
+
+    #stagemanager {
+      .hero-image {
+        position: relative;
+        left: calc((100vw - 100%) * -0.5 - 0.750rem);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
   body.home {
     main > picture + .container {
       padding-bottom: 2.5rem;
@@ -371,7 +409,7 @@ body.home {
 
 @media (min-width: 1200px) {
   body.home {
-    #tiny-feat .x-large-border:last-of-type p br {
+    #tiny-feat .grid .x-large-border:last-of-type p br {
       display: none;
     }
   }

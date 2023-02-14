@@ -63,7 +63,7 @@ style: home
   </div>
 </div>
 
-<div class="container">
+<div class="container" id="home-fence">
   <div class="grid">
     <div>
       <h3 class="vault mobile-medium">Budgets</h3>
@@ -147,6 +147,33 @@ style: home
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/exports-dark.jpg 1x, /assets/images/home/exports-dark@2x.jpg 2x, /assets/images/home/exports-dark@3x.jpg 3x" />
         <img src="/assets/images/home/exports.jpg" srcset="/assets/images/home/exports@2x.jpg 2x, /assets/images/home/exports@3x.jpg 3x" alt="Graphical representation of data exports" width="321" height="150"/>
+      </picture>
+    </div>
+  </div>
+
+  <div class="grid" style="margin-top: 3rem;">
+    <div class="x-large-border">
+      <h4 class="vault mobile-medium">iCloud Sync</h4>
+      <p>Entries are synced via iCloud across all your devices using the same account.</p>
+      <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/iCloud-dark.jpg 1x, /assets/images/home/iCloud-dark@2x.jpg 2x, /assets/images/home/iCloud-dark@3x.jpg 3x" />
+        <img src="/assets/images/home/iCloud.jpg" srcset="/assets/images/home/iCloud@2x.jpg 2x, /assets/images/home/iCloud@3x.jpg 3x" alt="Graphical representation of iCloud sync" width="321" height="150"/>
+      </picture>
+    </div>
+    <div class="x-large-border">
+      <h4 class="vault mobile-medium">ForEx</h4>
+      <p>Currency conversions supported across 100+ currencies, rates updated thrice a day.</p>
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/forex-dark.jpg 1x, /assets/images/home/forex-dark@2x.jpg 2x, /assets/images/home/forex-dark@3x.jpg 3x" />
+        <img src="/assets/images/home/forex.jpg" srcset="/assets/images/home/forex@2x.jpg 2x, /assets/images/home/forex@3x.jpg 3x" alt="Graphical representation of currency conversion" width="321" height="150"/>
+      </picture>
+    </div>
+    <div class="x-large-border">
+      <h4 class="vault mobile-medium">Siri Shortcuts</h4>
+      <p>Get an overview of your ledgers and expenses using Siri<br /><br /></p>
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/siri-dark.jpg 1x, /assets/images/home/siri-dark@2x.jpg 2x, /assets/images/home/siri-dark@3x.jpg 3x" />
+        <img src="/assets/images/home/siri.jpg" srcset="/assets/images/home/siri@2x.jpg 2x, /assets/images/home/siri@3x.jpg 3x" alt="Graphical representation of Siri" width="321" height="150"/>
       </picture>
     </div>
   </div>
