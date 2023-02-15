@@ -377,7 +377,7 @@ body.home {
 }
 
 @media (min-width: 768px) {
-  body.home {
+  body.home:not(.mac) {
     .hero-image {
       text-align: center;
 

@@ -102,6 +102,17 @@ footer {
   p {
     font-size: 0.7rem;
     color: var(--dz-color-subtext);
+    margin-bottom: 0.5rem;
+  }
+}
+
+body.blog {
+  #footer-apple-disclaimer {
+    display: none;
+  }
+
+  footer p {
+    margin-bottom: 0.75rem;
   }
 }
 
@@ -122,3 +133,4 @@ footer {
 @import "layouts/home";
 @import "layouts/blog";
 @import "layouts/support";
+@import "layouts/mac";

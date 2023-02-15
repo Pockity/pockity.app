@@ -16,28 +16,6 @@
   </header>
   <main>
     {{ content }}
-
-    {%- include storebuttons.html -%}
   </main>
-
-  {%- include support.html -%}
-
-  {%- include footer.html -%}
-  <script>
-    const exploreButtons = document.querySelectorAll(`button[title="Explore Pockity's features"]`);
-    const container = document.querySelector("main > picture + .container")
-    const clickFn = (evt) => {
-      evt && evt.preventDefault();
-      container && container.scrollIntoView({
-        behavior: "smooth", 
-        block: "start", 
-        inline: "nearest"
-      });
-    };
-
-    exploreButtons.forEach(elem => { 
-      elem.addEventListener("click", clickFn, false);
-    })
-  </script>
 </body>
 </html>
