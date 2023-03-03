@@ -1,7 +1,9 @@
 ---
+title: macOS
 layout: mac
 permalink: /mac/
 style: home mac
+description: sssh.... quite about this one *wink*
 ---
 
 <div class="container-fluid no-padding" id="mac-teaser">

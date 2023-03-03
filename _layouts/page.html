@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en-IN" }}">
+{%- include head.html -%}
+<body class="{% if page.style %}{{ page.style }}{% endif %} blog">
+  <div class="container readable">
+    {%- include header.html -%}
+  </div>
+  <main>
+    <div class="container readable">
+      <article class="page-content no-style"> 
+        <div class="article-content">
+          {{ content }}
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <div class="container readable">
+    {%- include footer.html -%}
+  </div>
+</body>
+</html>
