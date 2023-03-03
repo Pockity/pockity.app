@@ -30,7 +30,9 @@ keywords: pockity,budget,manager,finance,tracker,expense,expenses,subscriptions,
 
 # Build settings
 plugins:
-  - jekyll-local-theme
+  - github-pages
+
+remote_theme: dezinezync/launchkit
 
 permalink: /blog/:year-:month-:day/:title/
 
@@ -54,5 +56,4 @@ defaults:
     layout: post
 
 # Theme Settings
-local_theme: launchkit
 caption: Simple personal budgeting and expense tracking
