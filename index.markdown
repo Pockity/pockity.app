@@ -7,11 +7,11 @@ style: home
 ---
 
 <picture>
-  <source media="(max-width: 600px)" srcset="/assets/images/home/hero-400w.jpg 1x, /assets/images/home/hero-800w.jpg 2x, /assets/images/home/hero-1600w.jpg 3x">
-  <source media="(min-width: 601px) and (max-width: 800px)" srcset="/assets/images/home/hero-800w.jpg 1x, /assets/images/home/hero-1600w.jpg 2x, /assets/images/home/hero@3x.jpg 3x">
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/hero-dark-400w.jpg 1x, /assets/images/home/hero-dark-800w.jpg 2x">
+  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="/assets/images/home/hero-400w.jpg 1x, /assets/images/home/hero-800w.jpg 2x, /assets/images/home/hero-1600w.jpg 3x">
+  <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: light)" srcset="/assets/images/home/hero-800w.jpg 1x, /assets/images/home/hero-1600w.jpg 2x, /assets/images/home/hero@3x.jpg 3x">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/hero-dark-400w.jpg 1x, /assets/images/home/hero-dark-800w.jpg 2x, /assets/images/home/hero-dark@2x.jpg 3x">
   <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/hero-dark-800w.jpg 1x, /assets/images/home/hero-dark@2x.jpg 2x">
-  <source media="(min-width: 801px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/hero-dark.jpg 1x, /assets/images/home/hero-dark@2x.jpg 2x, /assets/images/home/hero-dark@3x.jpg 3x">
+  <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/hero-dark.jpg 1x, /assets/images/home/hero-dark@2x.jpg 2x, /assets/images/home/hero-dark@3x.jpg 3x">
   <img src="/assets/images/home/hero.jpg" srcset="/assets/images/home/hero@2x.jpg 2x, /assets/images/home/hero@3x.jpg 3x" width="1130" height="712" alt="Pockity's ledger timeline displayed on an iPad Pro 12.9 inches and iPhone 14 Pro"/>
 </picture>
 
@@ -30,11 +30,11 @@ style: home
     </hgroup>
     <div class="image-wrapper" role="img">
       <picture>
-        <source media="(max-width: 600px)" srcset="/assets/images/home/editor-400w.jpg 1x, /assets/images/home/editor-800w.jpg 2x, /assets/images/home/editor-1600w.jpg 3x" />
-        <source media="(min-width: 601px) and (max-width: 800px)" srcset="/assets/images/home/editor-800w.jpg 1x, /assets/images/home/editor-1600w.jpg 2x" />
-        <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/editor-dark-400w.jpg 1x, /assets/images/home/editor-dark-800w.jpg 2x" />
-        <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/editor-dark-800w.jpg 1x, /assets/images/home/editor-dark-1600w.jpg 2x" />
-        <source media="(min-width: 801px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/editor-dark.jpg 1x, /assets/images/home/editor-dark@2x.jpg 2x" />
+        <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="/assets/images/home/editor-400w.jpg 1x, /assets/images/home/editor-800w.jpg 2x, /assets/images/home/editor-1600w.jpg 3x">
+        <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: light)" srcset="/assets/images/home/editor-800w.jpg 1x, /assets/images/home/editor-1600w.jpg 2x, /assets/images/home/editor@2x.jpg 3x">
+        <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/editor-dark-400w.jpg 1x, /assets/images/home/editor-dark-800w.jpg 2x, /assets/images/home/editor-dark@2x.jpg 3x">
+        <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/editor-dark-800w.jpg 1x, /assets/images/home/editor-dark@2x.jpg 2x">
+        <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/editor-dark.jpg 1x, /assets/images/home/editor-dark@2x.jpg 2x, /assets/images/home/editor-dark@3x.jpg 3x">
         <img src="/assets/images/home/editor.jpg" srcset="/assets/images/home/editor@2x.jpg 2x, /assets/images/home/editor@3x.jpg 3x" alt="Pockity's editor, fluidly transitioning between Expense, Transfers, and Income" width="1014" height="640"/>
       </picture>
     </div>
@@ -53,12 +53,12 @@ style: home
 
   <div class="image-wrapper" role="img">
     <picture id="home-transactions">
-      <source media="(max-width: 600px)" srcset="/assets/images/home/transactions-400w.jpg 1x, /assets/images/home/transactions@2x.jpg 2x, /assets/images/home/transactions@3x.jpg 3x" />
-      <source media="(min-width: 601px) and (max-width: 800px)" srcset="/assets/images/home/transactions-800w.jpg 1x, /assets/images/home/transactions@2x.jpg 2x, /assets/images/home/transactions@3x.jpg 3x" />
-      <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/transactions-dark-400w.jpg 1x, /assets/images/home/transactions-dark-800w.jpg 2x" />
-      <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/transactions-dark-800w.jpg 1x, /assets/images/home/transactions-dark-1600w.jpg 2x" />
-      <source media="(min-width: 801px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/transactions-dark.jpg 1x, /assets/images/home/transactions-dark@2x.jpg 2x" />
-      <img src="/assets/images/home/transactions.jpg" srcset="/assets/images/home/transactions@2x.jpg 2x" alt="Pockity's User Interface design displayed in a three by two grid of iPad Pros in portrait and landscape orientations. From top-left: Recurring, Entries, Categories, Table view, Split View mode and Category entries view." width="1552" height="1058" class="center-t"/>
+      <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="/assets/images/home/transactions-400w.jpg 1x, /assets/images/home/transactions-800w.jpg 2x, /assets/images/home/transactions-1600w.jpg 3x">
+      <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: light)" srcset="/assets/images/home/transactions-800w.jpg 1x, /assets/images/home/transactions-1600w.jpg 2x, /assets/images/home/transactions@2x.jpg 3x">
+      <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/transactions-dark-400w.jpg 1x, /assets/images/home/transactions-dark-800w.jpg 2x, /assets/images/home/transactions-dark@2x.jpg 3x">
+      <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/transactions-dark-800w.jpg 1x, /assets/images/home/transactions-dark@2x.jpg 2x, /assets/images/home/transactions-dark@3x.jpg 3x">
+      <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/transactions-dark.jpg 1x, /assets/images/home/transactions-dark@2x.jpg 2x, /assets/images/home/transactions-dark@3x.jpg 3x">
+      <img src="/assets/images/home/transactions.jpg" srcset="/assets/images/home/transactions@2x.jpg 2x, /assets/images/home/transactions@3x.jpg 3x"  alt="Pockity's User Interface design displayed in a three by two grid of iPad Pros in portrait and landscape orientations. From top-left: Recurring, Entries, Categories, Table view, Split View mode and Category entries view." width="1552" height="1058" class="center-t"/>
     </picture>
   </div>
 </div>
@@ -112,12 +112,12 @@ style: home
     </hgroup>
     <div class="image-wrapper" role="img">
       <picture>
-        <source media="(max-width: 600px)" srcset="/assets/images/home/recurring-400w.jpg 1x, /assets/images/home/recurring-800w.jpg 2x, /assets/images/home/recurring-1600w.jpg 3x" />
-        <source media="(min-width: 601px) and (max-width: 800px)" srcset="/assets/images/home/recurring-800w.jpg 1x, /assets/images/home/recurring-1600w.jpg 2x" />
-        <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/recurring-dark-400w.jpg 1x, /assets/images/home/recurring-dark-800w.jpg 2x" />
-        <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/recurring-dark-800w.jpg 1x, /assets/images/home/recurring-dark-1600w.jpg 2x" />
-        <source media="(min-width: 801px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/recurring-dark.jpg 1x, /assets/images/home/recurring-dark@2x.jpg 2x" />
-        <img src="/assets/images/home/recurring.jpg" srcset="/assets/images/home/recurring@2x.jpg 2x, /assets/images/home/recurring@3x.jpg 3x" alt="Recurring expeneses grid and entries automatically generated from such templates." width="716" height="611"/>
+        <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="/assets/images/home/recurring-400w.jpg 1x, /assets/images/home/recurring-800w.jpg 2x, /assets/images/home/recurring-1600w.jpg 3x">
+        <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: light)" srcset="/assets/images/home/recurring-800w.jpg 1x, /assets/images/home/recurring-1600w.jpg 2x, /assets/images/home/recurring@2x.jpg 3x">
+        <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/recurring-dark-400w.jpg 1x, /assets/images/home/recurring-dark-800w.jpg 2x, /assets/images/home/recurring-dark@2x.jpg 3x">
+        <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/recurring-dark-800w.jpg 1x, /assets/images/home/recurring-dark@2x.jpg 2x, /assets/images/home/recurring-dark@3x.jpg 3x">
+        <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/recurring-dark.jpg 1x, /assets/images/home/recurring-dark@2x.jpg 2x, /assets/images/home/recurring-dark@3x.jpg 3x">
+        <img src="/assets/images/home/recurring.jpg" srcset="/assets/images/home/recurring@2x.jpg 2x, /assets/images/home/recurring@3x.jpg 3x"  alt="Recurring expeneses grid and entries automatically generated from such templates." width="716" height="611"/>
       </picture>
     </div>
   </div>
@@ -189,12 +189,12 @@ style: home
     </hgroup>
     <div class="image-wrapper" role="img">
       <picture>
-        <source media="(max-width: 600px)" srcset="/assets/images/home/notifications-400w.jpg 1x, /assets/images/home/notifications-800w.jpg 2x, /assets/images/home/notifications-1600w.jpg 3x" />
-        <source media="(min-width: 601px) and (max-width: 800px)" srcset="/assets/images/home/notifications-800w.jpg 1x, /assets/images/home/notifications-1600w.jpg 2x" />
-        <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/notifications-dark-400w.jpg 1x, /assets/images/home/notifications-dark-800w.jpg 2x" />
-        <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/notifications-dark-800w.jpg 1x, /assets/images/home/notifications-dark-1600w.jpg 2x" />
-        <source media="(min-width: 801px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/notifications-dark.jpg 1x, /assets/images/home/notifications-dark@2x.jpg 2x" />
-        <img src="/assets/images/home/notifications.jpg" srcset="/assets/images/home/notifications@2x.jpg 2x, /assets/images/home/notifications@3x.jpg 3x" alt="From left-to-right: Pockity's user interface for scheduling reminders, and notifications for recurring expenses on the iOS homescreen." width="716" height="608"/>
+        <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="/assets/images/home/notifications-400w.jpg 1x, /assets/images/home/notifications-800w.jpg 2x, /assets/images/home/notifications-1600w.jpg 3x">
+        <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: light)" srcset="/assets/images/home/notifications-800w.jpg 1x, /assets/images/home/notifications-1600w.jpg 2x, /assets/images/home/notifications@2x.jpg 3x">
+        <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/notifications-dark-400w.jpg 1x, /assets/images/home/notifications-dark-800w.jpg 2x, /assets/images/home/notifications-dark@2x.jpg 3x">
+        <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/notifications-dark-800w.jpg 1x, /assets/images/home/notifications-dark@2x.jpg 2x, /assets/images/home/notifications-dark@3x.jpg 3x">
+        <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/notifications-dark.jpg 1x, /assets/images/home/notifications-dark@2x.jpg 2x, /assets/images/home/notifications-dark@3x.jpg 3x">
+        <img src="/assets/images/home/notifications.jpg" srcset="/assets/images/home/notifications@2x.jpg 2x, /assets/images/home/notifications@3x.jpg 3x"  alt="From left-to-right: Pockity's user interface for scheduling reminders, and notifications for recurring expenses on the iOS homescreen." width="716" height="608"/>
       </picture>
     </div>
   </div>
