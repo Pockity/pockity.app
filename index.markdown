@@ -156,8 +156,8 @@ style: home
       <h4 class="vault mobile-medium">iCloud Sync</h4>
       <p>Entries are synced via iCloud across all your devices using the same account.</p>
       <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/iCloud-dark.jpg 1x, /assets/images/home/iCloud-dark@2x.jpg 2x, /assets/images/home/iCloud-dark@3x.jpg 3x" />
-        <img src="/assets/images/home/iCloud.jpg" srcset="/assets/images/home/iCloud@2x.jpg 2x, /assets/images/home/iCloud@3x.jpg 3x" alt="Graphical representation of iCloud sync" width="321" height="150"/>
+          <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/icloud-dark.jpg 1x, /assets/images/home/icloud-dark@2x.jpg 2x, /assets/images/home/icloud-dark@3x.jpg 3x" />
+        <img src="/assets/images/home/icloud.jpg" srcset="/assets/images/home/icloud@2x.jpg 2x, /assets/images/home/icloud@3x.jpg 3x" alt="Graphical representation of iCloud sync" width="321" height="150"/>
       </picture>
     </div>
     <div class="x-large-border">
