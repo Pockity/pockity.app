@@ -3,6 +3,7 @@
 
 @import "{{ site.theme }}";
 @import "variables";
+@import "buttons";
 
 @font-face {
   font-family: "VaultAlarm";
@@ -68,22 +69,6 @@ h1, h2, h3, h4, h5, h6 {
     span {
       font-weight: 500;
     }
-  }
-}
-
-button, *[role="button"] {
-  &.black {
-    font-family: "VaultAlarm";
-    background-color: var(--dz-title-color);
-    border: none;
-
-    &:hover {
-      background-color: var(--dz-subtitle-color);
-    }
-  }
-
-  &.rounded {
-    border-radius: 2rem;
   }
 }
 
