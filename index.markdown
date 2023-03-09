@@ -6,13 +6,13 @@ layout: home
 style: home
 ---
 
-<picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="/assets/images/home/hero-400w.jpg 1x, /assets/images/home/hero-800w.jpg 2x, /assets/images/home/hero-1600w.jpg 3x">
-  <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: light)" srcset="/assets/images/home/hero-800w.jpg 1x, /assets/images/home/hero-1600w.jpg 2x, /assets/images/home/hero@3x.jpg 3x">
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/hero-dark-400w.jpg 1x, /assets/images/home/hero-dark-800w.jpg 2x, /assets/images/home/hero-dark@2x.jpg 3x">
-  <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/hero-dark-800w.jpg 1x, /assets/images/home/hero-dark@2x.jpg 2x">
-  <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/hero-dark.jpg 1x, /assets/images/home/hero-dark@2x.jpg 2x, /assets/images/home/hero-dark@3x.jpg 3x">
-  <img src="/assets/images/home/hero.jpg" srcset="/assets/images/home/hero@2x.jpg 2x, /assets/images/home/hero@3x.jpg 3x" width="1130" height="712" alt="Pockity's ledger timeline displayed on an iPad Pro 12.9 inches and iPhone 14 Pro"/>
+<picture id="home-hero" data-inviewport>
+  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="/assets/images/home/hero-400w.png 1x, /assets/images/home/hero-800w.png 2x, /assets/images/home/hero-1600w.png 3x">
+  <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: light)" srcset="/assets/images/home/hero-800w.png 1x, /assets/images/home/hero-1600w.png 2x, /assets/images/home/hero@3x.png 3x">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/hero-dark-400w.png 1x, /assets/images/home/hero-dark-800w.png 2x, /assets/images/home/hero-dark@2x.png 3x">
+  <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/hero-dark-800w.png 1x, /assets/images/home/hero-dark@2x.png 2x">
+  <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/hero-dark.png 1x, /assets/images/home/hero-dark@2x.png 2x, /assets/images/home/hero-dark@3x.png 3x">
+  <img src="/assets/images/home/hero.png" srcset="/assets/images/home/hero@2x.png 2x, /assets/images/home/hero@3x.png 3x" width="763" height="632" alt="Pockity's ledger timeline displayed on an iPad Pro 12.9 inches and iPhone 14 Pro"/>
 </picture>
 
 <div class="container readable center">
@@ -215,3 +215,21 @@ style: home
     <p>The perfect producivity companion works perfectly with Pockity, with support for multiple windows, keyboard & trackpad, and keyboard shortcuts.</p>
   </hgroup>
 </div>
+
+<script>
+const inViewport = (entries, observer) => {
+  entries.forEach(entry => {
+    entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
+  });
+};
+
+const Obs = new IntersectionObserver(inViewport);
+ //See: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Intersection_observer_options
+const obsOptions = {};
+
+// Attach observer to every [data-inviewport] element:
+const ELSinViewport = document.querySelectorAll('[data-inviewport]');
+ELSinViewport.forEach(EL => {
+  Obs.observe(EL, obsOptions);
+});
+</script>

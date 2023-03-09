@@ -16,14 +16,14 @@ body.home {
 
     &:before {
       position: absolute;
-      top: 7rem;
+      bottom: -34rem;
       left: 50%;
       content: '';
-      background: url(../images/home/header-blur.png);
+      background: url(../images/headers/flame-100.png);
       background-size: 100% 100%;
       max-width: 100vw;
-      width: 508px;
-      height: 338px;
+      width: 1374px;
+      height: 902px;
 
       z-index: 0;
       transform: translateX(-50%);
@@ -49,6 +49,13 @@ body.home {
       margin-top: 1rem;
       font-size: 0.6rem;
     }
+  }
+
+  #home-hero {
+    text-align: center;
+    margin-bottom: 4rem;
+    position: relative;
+    z-index: 1;
   }
 
   main > .container:not(:last-of-type):not(.clear-bot) {
@@ -220,11 +227,120 @@ body.home {
   }
 }
 
+// Apply the transtion when either:
+//   - the header is visible
+//   - the hero image is visible
+body.home > header.is-inViewport,
+body.home:has(#home-hero.is-inViewport) > header {
+  &:before {
+    -webkit-animation: fade 5s infinite;
+    animation: fade 5s infinite;
+    -moz-animation: fade 5s infinite;
+    -o-animation: fade 5s infinite;
+  }
+}
+
+@-webkit-keyframes fade {
+  0% {opacity: 0.45} 
+  50% {opacity: 1}
+  100% {opacity:0.45}
+}
+
+@-moz-keyframes fade{
+  0% {opacity: 0.45} 
+  50% {opacity: 1}
+  100% {opacity:0.45}  
+}
+
+@keyframes fade {
+  0% {opacity: 0.45} 
+  50% {opacity: 1}
+  100%{opacity: 0.45}
+}
+@-o-keyframes fade {
+  0% {opacity: 0.45} 
+  50% {opacity: 1}
+  100%{opacity: 0.45}
+}
+
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   body.home {
     header {
       &:before {
-        background-image: url(../images/home/header-blur@2x.png);
+        background-image: url(../images/headers/flame-100@2x.png);
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  body.home {
+    header {
+      &:before {
+        background-image: url(../images/headers/flame-400w.png);
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  body.home {
+    header {
+      &:before {
+        background-image: url(../images/headers/flame-100-800w.png);
+      }
+    }
+  }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+  body.home {
+    header {
+      &:before {
+        background-image: url(../images/headers/flame-100-800w.png);
+      }
+    }
+  }
+}
+
+@media (min-width: 601px) and (max-width: 800px) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  body.home {
+    header {
+      &:before {
+        background-image: url(../images/headers/flame-100-1200w.png);
+      }
+    }
+  }
+}
+
+@media (min-width: 601px) and (max-width: 800px) and (-webkit-min-device-pixel-ratio: 3), (min-resolution: 384dpi) {
+  body.home {
+    header {
+      &:before {
+        background-image: url(../images/headers/flame-100-1600w.png);
+      }
+    }
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 384dpi) {
+  body.home {
+    header {
+      &:before {
+        background-image: url(../images/headers/flame-100@3x.png);
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) and (orientation: portrait) {
+  body.home {
+    > header {
+      &:before {
+        max-width: 150vw;
+        height: auto;
+        aspect-ratio: 1374/902;
+        bottom: -24rem;
       }
     }
   }
@@ -232,16 +348,6 @@ body.home {
 
 @media (max-width: 767px) {
   body.home {
-    main > picture {
-      text-align: center;
-
-      img {
-        max-width: 150vw;
-        object-fit: cover;
-        margin-left: calc((150vw - 100vw) * -0.8);
-      }
-    }
-
     .pic-right, .pic-left, .pic-top, .pic-bottom {
       flex-direction: column;
 
@@ -320,7 +426,7 @@ body.home {
   body.home {
     main > picture {
       position: relative;
-      left: 2.5rem;
+      left: -2rem;
     }
 
     #home-fence, #home-widgets {
@@ -372,22 +478,6 @@ body.home {
 
     #stagemanager {
       padding-top: calc((100vh - 100%) * 0.5);
-    }
-  }
-}
-
-@media (min-width: 768px) {
-  body.home:not(.mac) {
-    .hero-image {
-      text-align: center;
-
-      img {
-        min-width: unset;
-        max-width: unset;
-        width: auto;
-        max-height: 100vh;
-        max-height: calc(100vh - 4rem);
-      }
     }
   }
 }
