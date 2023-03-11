@@ -4,7 +4,6 @@ button, *[role="button"] {
   &.black {
     font-family: "VaultAlarm";
     background-color: var(--dz-title-color);
-    background-image: linear-gradient(to bottom, #444 0%, #000 100%);
     border: none;
 
     &:hover, &:target, &:focus {
