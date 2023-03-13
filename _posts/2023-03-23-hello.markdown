@@ -16,4 +16,4 @@ If you have any questions about the app or feature suggestions, please reach out
 
 If you'd like to help with the localisation efforts of the app, please check the [Github Repo](https://github.com/Pockity/Localisations).
 
-And finally, if you're a student, please reach out to me, I'd be happy to give a discount for **Pockity+**.
+And finally, if you're a student, please reach out to me, I'd be happy to give you a discount for **Pockity+**.

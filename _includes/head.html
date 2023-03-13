@@ -17,6 +17,8 @@
   {%- endif -%}
   {%- if page.bannerImage -%}
   <meta property="og:image" content="{{ page.bannerImage }}" />
+  {%- elsif post.bannerImage -%}
+  <meta property="og:image" content="{{ post.bannerImage }}" />
   {%- else -%}
   <meta property="og:image" content="{{ "/assets/images/home/hero@2x.jpg" | absolute_url }}" />
   {%- endif -%}
