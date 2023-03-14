@@ -21,7 +21,7 @@ style: home
 </div>
 
 <div class="container fluid">
-  <div class="pic-right" id="home-editor">
+  <div class="pic-right" id="home-editor" data-inviewport>
     <hgroup class="v-center">
       <small class="section-title spacer-bot" id="cap-editor">Editor</small>
       <h3 class="section-header-m vault">Fluid. Fast. Functional.</h3>
@@ -30,12 +30,12 @@ style: home
     </hgroup>
     <div class="image-wrapper" role="img">
       <picture>
-        <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="/assets/images/home/editor-400w.jpg 1x, /assets/images/home/editor-800w.jpg 2x, /assets/images/home/editor-1600w.jpg 3x">
-        <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: light)" srcset="/assets/images/home/editor-800w.jpg 1x, /assets/images/home/editor-1600w.jpg 2x, /assets/images/home/editor@2x.jpg 3x">
-        <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/editor-dark-400w.jpg 1x, /assets/images/home/editor-dark-800w.jpg 2x, /assets/images/home/editor-dark@2x.jpg 3x">
-        <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/editor-dark-800w.jpg 1x, /assets/images/home/editor-dark@2x.jpg 2x">
-        <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/editor-dark.jpg 1x, /assets/images/home/editor-dark@2x.jpg 2x, /assets/images/home/editor-dark@3x.jpg 3x">
-        <img src="/assets/images/home/editor.jpg" srcset="/assets/images/home/editor@2x.jpg 2x, /assets/images/home/editor@3x.jpg 3x" alt="Pockity's editor, fluidly transitioning between Expense, Transfers, and Income" width="1014" height="640"/>
+        <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="/assets/images/home/editor-400w.png 1x, /assets/images/home/editor-800w.png 2x, /assets/images/home/editor-1600w.png 3x">
+        <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: light)" srcset="/assets/images/home/editor-800w.png 1x, /assets/images/home/editor-1600w.png 2x, /assets/images/home/editor@2x.png 3x">
+        <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/editor-dark-400w.png 1x, /assets/images/home/editor-dark-800w.png 2x, /assets/images/home/editor-dark@2x.png 3x">
+        <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/editor-dark-800w.png 1x, /assets/images/home/editor-dark@2x.png 2x">
+        <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/editor-dark.png 1x, /assets/images/home/editor-dark@2x.png 2x, /assets/images/home/editor-dark@3x.png 3x">
+        <img src="/assets/images/home/editor.png" srcset="/assets/images/home/editor@2x.png 2x, /assets/images/home/editor@3x.png 3x" alt="Pockity's editor, fluidly transitioning between Expense, Transfers, and Income" width="920" height="690"/>
       </picture>
     </div>
   </div>
@@ -187,14 +187,11 @@ style: home
       <p>Schedule daily reminders to help you form a habit of adding expenses.</p>
       <p>Automatic notifications for upcoming recurring expenses, so you can ensure sufficient balances and not worry about overdraft fees.</p>
     </hgroup>
-    <div class="image-wrapper" role="img">
+    <div class="image-wrapper" role="img" data-inviewport>
       <picture>
-        <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="/assets/images/home/notifications-400w.jpg 1x, /assets/images/home/notifications-800w.jpg 2x, /assets/images/home/notifications-1600w.jpg 3x">
-        <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: light)" srcset="/assets/images/home/notifications-800w.jpg 1x, /assets/images/home/notifications-1600w.jpg 2x, /assets/images/home/notifications@2x.jpg 3x">
-        <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/notifications-dark-400w.jpg 1x, /assets/images/home/notifications-dark-800w.jpg 2x, /assets/images/home/notifications-dark@2x.jpg 3x">
-        <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/notifications-dark-800w.jpg 1x, /assets/images/home/notifications-dark@2x.jpg 2x, /assets/images/home/notifications-dark@3x.jpg 3x">
-        <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/notifications-dark.jpg 1x, /assets/images/home/notifications-dark@2x.jpg 2x, /assets/images/home/notifications-dark@3x.jpg 3x">
-        <img src="/assets/images/home/notifications.jpg" srcset="/assets/images/home/notifications@2x.jpg 2x, /assets/images/home/notifications@3x.jpg 3x"  alt="From left-to-right: Pockity's user interface for scheduling reminders, and notifications for recurring expenses on the iOS homescreen." width="716" height="608"/>
+        <source media="(max-width: 600px)" srcset="/assets/images/home/notifications-400w.png 1x, /assets/images/home/notifications-800w.png 2x, /assets/images/home/notifications-1600w.png 3x">
+        <source media="(min-width: 601px) and (max-width: 800px)" srcset="/assets/images/home/notifications-800w.png 1x, /assets/images/home/notifications-1600w.png 2x, /assets/images/home/notifications@2x.png 3x">
+        <img src="/assets/images/home/notifications.png" srcset="/assets/images/home/notifications@2x.png 2x, /assets/images/home/notifications@3x.png 3x"  alt="From left-to-right: Pockity's user interface for scheduling reminders, and notifications for recurring expenses on the iOS homescreen." width="600" height="608"/>
       </picture>
     </div>
   </div>
