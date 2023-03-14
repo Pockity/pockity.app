@@ -110,14 +110,14 @@ style: home
       <p>Create repeating expenses for loan re-payments, magazines, utility bills, app subscriptions and a lot more.</p>
       <p>Pockity schedules notifications for upcoming recurring expenses, one day prior to the actual date, so you can ensure sufficient balances and not worry about overdraft fees.</p>
     </hgroup>
-    <div class="image-wrapper" role="img">
+    <div class="image-wrapper" role="img" data-inviewport>
       <picture>
-        <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="/assets/images/home/recurring-400w.jpg 1x, /assets/images/home/recurring-800w.jpg 2x, /assets/images/home/recurring-1600w.jpg 3x">
-        <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: light)" srcset="/assets/images/home/recurring-800w.jpg 1x, /assets/images/home/recurring-1600w.jpg 2x, /assets/images/home/recurring@2x.jpg 3x">
-        <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/recurring-dark-400w.jpg 1x, /assets/images/home/recurring-dark-800w.jpg 2x, /assets/images/home/recurring-dark@2x.jpg 3x">
-        <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/recurring-dark-800w.jpg 1x, /assets/images/home/recurring-dark@2x.jpg 2x, /assets/images/home/recurring-dark@3x.jpg 3x">
-        <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/recurring-dark.jpg 1x, /assets/images/home/recurring-dark@2x.jpg 2x, /assets/images/home/recurring-dark@3x.jpg 3x">
-        <img src="/assets/images/home/recurring.jpg" srcset="/assets/images/home/recurring@2x.jpg 2x, /assets/images/home/recurring@3x.jpg 3x"  alt="Recurring expeneses grid and entries automatically generated from such templates." width="716" height="611"/>
+        <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="/assets/images/home/recurring-400w.png 1x, /assets/images/home/recurring-800w.png 2x, /assets/images/home/recurring-1600w.png 3x">
+        <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: light)" srcset="/assets/images/home/recurring-800w.png 1x, /assets/images/home/recurring-1600w.png 2x, /assets/images/home/recurring@2x.png 3x">
+        <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/recurring-dark-400w.png 1x, /assets/images/home/recurring-dark-800w.png 2x, /assets/images/home/recurring-dark@2x.png 3x">
+        <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/recurring-dark-800w.png 1x, /assets/images/home/recurring-dark@2x.png 2x, /assets/images/home/recurring-dark@3x.png 3x">
+        <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/recurring-dark.png 1x, /assets/images/home/recurring-dark@2x.png 2x, /assets/images/home/recurring-dark@3x.png 3x">
+        <img src="/assets/images/home/recurring.png" srcset="/assets/images/home/recurring@2x.png 2x, /assets/images/home/recurring@3x.png 3x"  alt="Recurring expeneses grid and entries automatically generated from such templates." width="554" height="611"/>
       </picture>
     </div>
   </div>
