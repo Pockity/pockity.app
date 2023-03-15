@@ -52,13 +52,13 @@ style: home
   </div>
 
   <div class="image-wrapper" role="img">
-    <picture id="home-transactions">
-      <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="/assets/images/home/transactions-400w.jpg 1x, /assets/images/home/transactions-800w.jpg 2x, /assets/images/home/transactions-1600w.jpg 3x">
-      <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: light)" srcset="/assets/images/home/transactions-800w.jpg 1x, /assets/images/home/transactions-1600w.jpg 2x, /assets/images/home/transactions@2x.jpg 3x">
-      <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/transactions-dark-400w.jpg 1x, /assets/images/home/transactions-dark-800w.jpg 2x, /assets/images/home/transactions-dark@2x.jpg 3x">
-      <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/transactions-dark-800w.jpg 1x, /assets/images/home/transactions-dark@2x.jpg 2x, /assets/images/home/transactions-dark@3x.jpg 3x">
-      <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/transactions-dark.jpg 1x, /assets/images/home/transactions-dark@2x.jpg 2x, /assets/images/home/transactions-dark@3x.jpg 3x">
-      <img src="/assets/images/home/transactions.jpg" srcset="/assets/images/home/transactions@2x.jpg 2x, /assets/images/home/transactions@3x.jpg 3x"  alt="Pockity's User Interface design displayed in a three by two grid of iPad Pros in portrait and landscape orientations. From top-left: Recurring, Entries, Categories, Table view, Split View mode and Category entries view." width="1552" height="1058" class="center-t"/>
+    <picture id="home-transactions" data-inviewport>
+      <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="/assets/images/home/transactions-400w.png 1x, /assets/images/home/transactions-800w.png 2x, /assets/images/home/transactions-1600w.png 3x">
+      <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: light)" srcset="/assets/images/home/transactions-800w.png 1x, /assets/images/home/transactions-1600w.png 2x, /assets/images/home/transactions@2x.png 3x">
+      <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/transactions-dark-400w.png 1x, /assets/images/home/transactions-dark-800w.png 2x, /assets/images/home/transactions-dark@2x.png 3x">
+      <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/transactions-dark-800w.png 1x, /assets/images/home/transactions-dark@2x.png 2x, /assets/images/home/transactions-dark@3x.png 3x">
+      <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/transactions-dark.png 1x, /assets/images/home/transactions-dark@2x.png 2x, /assets/images/home/transactions-dark@3x.png 3x">
+      <img src="/assets/images/home/transactions.png" srcset="/assets/images/home/transactions@2x.png 2x, /assets/images/home/transactions@3x.png 3x"  alt="Pockity's User Interface design displayed in a three by two grid of iPad Pros in portrait and landscape orientations. From top-left: Recurring, Entries, Categories, Table view, Split View mode and Category entries view." width="1499" height="1267" class="center-t"/>
     </picture>
   </div>
 </div>

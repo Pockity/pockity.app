@@ -1,5 +1,9 @@
 body.home {
+  max-width: 100vw;
+  overflow-x: hidden;
+
   main {
+    max-width: 100vw;
     overflow-x: hidden;
 
     > picture {
@@ -21,9 +25,10 @@ body.home {
       content: '';
       background: url(../images/headers/flame-100.png);
       background-size: 100% 100%;
-      max-width: 100vw;
       width: 1374px;
-      height: 902px;
+      max-width: 100vw;
+      // height: 902px;
+      aspect-ratio: 1374/902;
 
       z-index: 0;
       transform: translateX(-50%);
@@ -131,13 +136,25 @@ body.home {
   }
 
   hgroup {
+    margin-bottom: 0;
+
     p {
       margin-bottom: var(--typography-spacing-vertical);
       --typography-spacing-vertical: 0.9rem;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
     }
 
     > *:last-child {
       --color: var(--color);
+    }
+  }
+
+  #home-widgets {
+    hgroup {
+      align-self: center;
     }
   }
 
@@ -281,9 +298,23 @@ body.home {
 
   #home-transactions {
     position: relative;
-    left: 1.5rem;
-
     margin-bottom: 3rem;
+    z-index: 1;
+
+    &:before {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      content: '';
+      background: url(../images/headers/flame-100.png);
+      background-size: 100% 100%;
+      max-width: 100vw;
+      width: 1242px;
+      height: 870px;
+
+      z-index: -1;
+      transform: translate(-50%, -50%);
+    }
   }
 }
 
@@ -294,7 +325,8 @@ body.home > header.is-inViewport,
 body.home:has(#home-hero.is-inViewport) > header, 
 body.home #home-editor.is-inViewport,
 body.home #home-reminders .image-wrapper.is-inViewport,
-body.home #home-recurring .image-wrapper.is-inViewport {
+body.home #home-recurring .image-wrapper.is-inViewport,
+body.home #home-transactions.is-inViewport {
   &:before {
     -webkit-animation: fade 5s infinite;
     animation: fade 5s infinite;
@@ -310,7 +342,9 @@ body.home #home-recurring .image-wrapper.is-inViewport {
   body.home > header.is-inViewport,
   body.home:has(#home-hero.is-inViewport) > header, 
   body.home #home-editor.is-inViewport,
-  body.home #home-reminders .image-wrapper.is-inViewport {
+  body.home #home-reminders .image-wrapper.is-inViewport.inViewport,
+  body.home #home-recurring .image-wrapper.is-inViewport,
+  body.home #home-transactions.is-inViewport {
     &:before {
       opacity: 0.5;
       -webkit-animation: none;
@@ -346,7 +380,7 @@ body.home #home-recurring .image-wrapper.is-inViewport {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   body.home {
-    header {
+    > header, #home-transactions {
       &:before {
         background-image: url(../images/headers/flame-100@2x.png);
       }
@@ -374,7 +408,7 @@ body.home #home-recurring .image-wrapper.is-inViewport {
 
 @media (max-width: 600px) {
   body.home {
-    header {
+    > header, #home-transactions {
       &:before {
         background-image: url(../images/headers/flame-100-400w.png);
       }
@@ -402,7 +436,7 @@ body.home #home-recurring .image-wrapper.is-inViewport {
 
 @media (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   body.home {
-    header {
+    > header, #home-transactions {
       &:before {
         background-image: url(../images/headers/flame-100-800w.png);
       }
@@ -430,7 +464,7 @@ body.home #home-recurring .image-wrapper.is-inViewport {
 
 @media (min-width: 601px) and (max-width: 800px) {
   body.home {
-    header {
+    > header, #home-transactions {
       &:before {
         background-image: url(../images/headers/flame-100-800w.png);
       }
@@ -458,7 +492,7 @@ body.home #home-recurring .image-wrapper.is-inViewport {
 
 @media (min-width: 601px) and (max-width: 800px) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   body.home {
-    header {
+    > header, #home-transactions {
       &:before {
         background-image: url(../images/headers/flame-100-1200w.png);
       }
@@ -486,7 +520,7 @@ body.home #home-recurring .image-wrapper.is-inViewport {
 
 @media (min-width: 601px) and (max-width: 800px) and (-webkit-min-device-pixel-ratio: 3), (min-resolution: 384dpi) {
   body.home {
-    header {
+    > header, #home-transactions {
       &:before {
         background-image: url(../images/headers/flame-100-1600w.png);
       }
@@ -512,9 +546,9 @@ body.home #home-recurring .image-wrapper.is-inViewport {
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 384dpi) {
+@media (min-width: 415px) and (-webkit-min-device-pixel-ratio: 3), (min-resolution: 384dpi) {
   body.home {
-    header {
+    > header, #home-transactions {
       &:before {
         background-image: url(../images/headers/flame-100@3x.png);
       }
@@ -542,9 +576,9 @@ body.home #home-recurring .image-wrapper.is-inViewport {
 
 @media (max-width: 414px) and (orientation: portrait) {
   body.home {
-    > header {
+    > header, #home-transactions {
       &:before {
-        max-width: 150vw;
+        max-width: 100vw;
         height: auto;
         aspect-ratio: 1374/902;
         bottom: -24rem;
