@@ -16,9 +16,9 @@
   <meta property="og:description" content="{{ site.description }}" />
   {%- endif -%}
   {%- if page.bannerImage -%}
-  <meta property="og:image" content="{{ page.bannerImage }}" />
+  <meta property="og:image" content="{{ page.bannerImage | append: '-1200w.png' | absolute_url  }}" />
   {%- elsif post.bannerImage -%}
-  <meta property="og:image" content="{{ post.bannerImage }}" />
+  <meta property="og:image" content="{{ post.bannerImage | append: '-1200w.png' | relative_url }}" />
   {%- else -%}
   <meta property="og:image" content="{{ "/assets/images/headers/hero.jpg" | absolute_url }}" />
   {%- endif -%}
