@@ -3,6 +3,7 @@
 
 @import "{{ site.theme }}";
 @import "variables";
+@import "buttons";
 
 @font-face {
   font-family: "VaultAlarm";
@@ -44,7 +45,7 @@ header {
   }
 
   #logo-title {
-    display: flex;
+    display: inline-flex;
     align-items: center;
 
     h1 {
@@ -71,22 +72,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-button, *[role="button"] {
-  &.black {
-    font-family: "VaultAlarm";
-    background-color: var(--dz-title-color);
-    border: none;
-
-    &:hover {
-      background-color: var(--dz-subtitle-color);
-    }
-  }
-
-  &.rounded {
-    border-radius: 2rem;
-  }
-}
-
 .caption {
   color: var(--dz-subtext-color);
 }
@@ -110,12 +95,63 @@ footer {
 }
 
 body.blog {
+  header .container {
+    display: flex;
+    align-items: baseline;
+
+    nav {
+      margin-left: auto;
+      margin-right: 0;
+    }
+  }
+
   #footer-apple-disclaimer {
     display: none;
   }
 
   footer p {
     margin-bottom: 0.75rem;
+  }
+}
+
+body.home nav .container, body.blog header nav {
+  display: flex;
+  align-items: baseline;
+}
+
+nav {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 1rem 0 auto;
+
+    &:first-of-type {
+      margin-left: auto;
+    }
+
+    &:last-of-type {
+      margin-right: 1rem;
+    }
+
+    a {
+      color: var(--dz-title-color);
+      font-size: 0.8rem;
+    }
+  }
+
+  > .container a[role="button"], > a[role="button"] {
+    margin: 0;
+    padding: 4px 8px 6px;
+
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif !important;
+    font-size: 0.8rem;
+    line-height: 1.0;
+
+    border: none;
+    height: auto;
+    min-height: unset;
+
+    border-radius: 1rem;
   }
 }
 

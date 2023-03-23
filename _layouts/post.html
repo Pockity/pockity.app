@@ -4,15 +4,23 @@
 <body class="{% if page.style %}{{ page.style }}{% endif %} blog">
   {%- include blogHeader.html -%}
   <main>
+    <hr />
     <div class="container readable">
       <article class="page-content no-style"> 
         <h2>{{ page.title | escape }}</h2>
+        {%- if page.bannerImage -%}
+          <picture id="post-banner">
+            <source media="(max-width: 600px)" srcset="{{ page.bannerImage | append: '-400w.png' | absolute_url }} 1x, {{ page.bannerImage | append: '-800w.png' | absolute_url }} 2x, {{ page.bannerImage | append: '-1600w.png' | absolute_url }} 3x">
+            <source media="(min-width: 601px) and (max-width: 800px)" srcset="{{ page.bannerImage | append: '-800w.png' | absolute_url }} 1x, {{ page.bannerImage | append: '-1600w.png' | absolute_url }} 2x, {{ page.bannerImage | append: '@3x.png' | absolute_url }} 3x">
+            <img src="{{ page.bannerImage | append: '.png' | absolute_url }}" srcset="{{ page.bannerImage | append: '@2x.png' | absolute_url }} 2x, {{ page.bannerImage | append: '@3x.png' | absolute_url }} 3x"/>
+          </picture>
+        {%- endif -%}
         <div class="article-content">
           {{ content }}
         </div>
       </article>
 
-      <section class="page-content">
+      <section class="page-post-content">
         <a href="#" onclick="window.history.back();">Back</a>
       </section>
     </div>

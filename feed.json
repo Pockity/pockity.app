@@ -1,0 +1,32 @@
+---
+layout: null
+---
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "{{ site.title }}",
+  "home_page_url": "{{ site.url }}",
+  "feed_url": "{{ site.url }}/feed.json",
+  "description": {{ site.description | jsonify }},
+  "icon": "{{ "/assets/images/appicon/appicon@2x.png" | absolute_url }}",
+  "author": {
+    "name": "Nikhil Nigade",
+    "url": "https://social.dezinezync.com/@dezinezync",
+    "avatar": "https://www.gravatar.com/avatar/884e476f05a20d0af1d8de59b946dbcf"
+  },
+  "language": "en-IN",
+  "hubs": [{
+    "type": "WebSub",
+    "url": "https://pubsubhubbub.appspot.com"
+  }],
+  "items": [{% for post in site.posts %}
+    {
+      "id": "{{ site.url}}{{ post.url }}",
+      "url": "{{ site.url }}{{ post.url }}",{% if post.link %}
+      "external_url": "{{ post.link }}",{% endif %}{% if post.layout != "micro" %}
+      "title": {{ post.title | jsonify }},{% endif %}
+      "content_html": {{ post.content | jsonify }},
+      "date_published": "{{ post.date | date: "%FT%H:%M:%S%z" }}",{%- if post.bannerImage -%}
+      "banner_image": "{{ post.bannerImage | append: '-1200w.png' | absolute_url }}"{%- endif -%}
+    }{% unless forloop.last %},{% endunless %}{% endfor %}
+  ]
+}
