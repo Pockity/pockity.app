@@ -12,8 +12,8 @@
   <meta name="description" content="{{ page.description }}">
   <meta property="og:description" content="{{ page.description }}" />
   {%- elsif page.excerpt -%}
-  <meta name="description" content="{{ page.excerpt }}">
-  <meta property="og:description" content="{{ page.excerpt }}" />
+  <meta name="description" content="{{ page.excerpt | strip_html | strip }}">
+  <meta property="og:description" content="{{ page.excerpt | strip_html | strip }}" />
   {%- elsif page.content -%}
   <meta name="description" content="{{ page.content | strip_html | truncatewords: 50 }}">
   <meta property="og:description" content="{{ page.content | strip_html | truncatewords: 50 }}" />
