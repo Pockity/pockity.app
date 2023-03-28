@@ -47,3 +47,15 @@ article {
   font-size: 0.6rem;
   font-weight: 600;
 }
+
+img.fit-height {
+  text-align: center;
+  margin: 0 auto;
+  width: auto;
+  max-height: 600px;
+  display: block;
+}
+
+img.fit-height ~ p {
+  margin-top: 2rem;
+}
