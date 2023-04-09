@@ -31,6 +31,7 @@ keywords: pockity,budget,manager,finance,tracker,expense,expenses,subscriptions,
 # Build settings
 plugins:
   - github-pages
+  - jekyll-paginate
 
 remote_theme: dezinezync/launchkit
 
