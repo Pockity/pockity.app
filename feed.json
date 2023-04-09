@@ -10,7 +10,7 @@ layout: null
   "icon": "{{ "/assets/images/appicon/appicon@2x.png" | absolute_url }}",
   "author": {
     "name": "Nikhil Nigade",
-    "url": "https://social.dezinezync.com/@dezinezync",
+    "url": "https://social.dezinezync.com/@nikhil",
     "avatar": "https://www.gravatar.com/avatar/884e476f05a20d0af1d8de59b946dbcf"
   },
   "language": "en-IN",
