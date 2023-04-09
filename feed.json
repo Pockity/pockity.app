@@ -18,7 +18,7 @@ layout: null
     "type": "WebSub",
     "url": "https://pubsubhubbub.appspot.com"
   }],
-  "items": [{% for post in site.posts %}
+  "items": [{% for post in site.posts limit:10 %}
     {
       "id": "{{ site.url}}{{ post.url }}",
       "url": "{{ site.url }}{{ post.url }}",{% if post.link %}
