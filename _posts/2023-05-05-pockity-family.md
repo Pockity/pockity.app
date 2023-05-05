@@ -19,4 +19,4 @@ You can download the update from the [App Store](https://pockity.app/store)
 
 With the release of Pockity+ for Family, and [Shared Ledgers](https://pockity.app/blog/2023-04-01/shared-ledgers/), Pockity is now an excellent choice for budgeting & tracking expenses together with your family. It’s never been easier. 
 
-If you’re interested in the other release notes for v2023.5.0, head over to its [release notes] page. 
+If you’re interested in the other release notes for v2023.5.0, head over to its [release notes](https://pockity.app/blog/2023-05-05/release/) page. 
