@@ -86,6 +86,14 @@ img.fit-height ~ p {
   margin-top: 2rem;
 }
 
+video.player, video.ios-player {
+  margin-bottom: 2rem;
+}
+
+video.ios-player {
+  border-radius: 8pt;
+}
+
 .pagination {
   font-size: 0.8rem;
   margin-bottom: 1rem;
