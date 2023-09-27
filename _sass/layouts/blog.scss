@@ -101,6 +101,30 @@ video.ios-player {
   a { font-weight: 500; }
 }
 
+code {
+  &[class*="lang-tag-"] {
+    font-weight: 600;
+    font-size: 0.7rem;
+    padding: 2px 4px;
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  }
+
+  &.lang-tag-watch {
+    // mint
+    color: rgb(0, 199, 190);
+  }
+
+  &.lang-tag-mac {
+    // cyan
+    color: rgb(50, 173, 230);
+  }
+
+  &.lang-tag-ios {
+    // indigo
+    color: rgb(88, 86, 214);
+  }
+}
+
 @media only screen and (max-width: 720px) {
   body.blog {
     header {
@@ -111,6 +135,23 @@ video.ios-player {
           margin-left: 0;
         }
       }
+    }
+  }
+
+  code {
+    &.lang-tag-watch {
+      // mint
+      color: rgb(99, 230, 226);
+    }
+
+    &.lang-tag-mac {
+      // cyan
+      color: rgb(100, 210, 255);
+    }
+
+    &.lang-tag-ios {
+      // indigo
+      color: rgb(94, 92, 230);
     }
   }
 }
