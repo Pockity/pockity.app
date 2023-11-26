@@ -37,7 +37,7 @@ remote_theme: dezinezync/launchkit
 
 permalink: /blog/:year-:month-:day/:title/
 
-include: ['_pages', 'blog']  
+include: ['_pages'] 
 
 defaults:
 - scope:
@@ -58,3 +58,6 @@ defaults:
 
 # Theme Settings
 caption: Simple personal budgeting and expense tracking
+
+paginate: 10
+paginate_path: /blog/page:num/

@@ -97,6 +97,9 @@ video.ios-player {
 .pagination {
   font-size: 0.8rem;
   margin-bottom: 1rem;
+  display: block;
+  max-width: 712px !important;
+  padding-left: 1rem;
 
   a { font-weight: 500; }
 }
