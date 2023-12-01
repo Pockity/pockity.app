@@ -21,7 +21,7 @@
 title: Pockity
 email: support@pockity.app
 description: >- # this means to ignore newlines until "baseurl:"
-  Simple personal budgeting and expense tracking for iOS & iPadOS (and soon, macOS)
+  Simple personal budgeting and expense tracking for iOS, iPadOS, and macOS.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://pockity.app" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: pockityapp
