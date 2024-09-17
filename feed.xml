@@ -23,9 +23,9 @@ layout: null
         <title>{{ post.title | xml_escape }}</title>
         <link>{{ post.url | absolute_url }}</link>
         <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
-        <content:encoded><![CDATA[
+        <description><![CDATA[
         {{ post.content }}
-        ]]></content:encoded>
+        ]]></description>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <author>{{ "support@pockity.app (Nikhil)" | xml_escape }}</author>
       </item>
