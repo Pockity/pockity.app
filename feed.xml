@@ -27,7 +27,7 @@ layout: null
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <author>{{ "support@pockity.app (Nikhil)" | xml_escape }}</author>
         {%- if post.bannerImage -%}
-        <media:content url="{{ post.bannerImage | append: '-1200w.png' | absolute_url }}" medium="image" lang="en"/>
+        <media:content url="{{ post.bannerImage | append: '-1200w.png' | absolute_url | xml_escape }}" medium="image" lang="en"/>
         {%- endif -%}
       </item>
     {% endfor %}
