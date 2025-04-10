@@ -40,14 +40,14 @@ article {
     justify-content: center;
     margin: 2rem 0;
 
-    img {
+    img, video {
       width: auto;
       max-width: unset;
       max-height: 600px;
     }
   }
 
-  picture, img {
+  picture, img, video {
     + h1, + h2, + h3, + h4, + h5, + h6 {
       margin-top: 4rem;
     }
@@ -89,6 +89,9 @@ img.fit-height ~ p {
 
 video.player, video.ios-player {
   margin-bottom: 2rem;
+  max-width: 100%;
+  max-height: 100vh;
+  max-height: calc(100vh - 4rem);
 }
 
 video.ios-player {
