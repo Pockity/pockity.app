@@ -6,15 +6,14 @@
   {%- include nav.html -%}
   <header data-inviewport>
     <div class="container">
-      <picture>
-        <img src="/assets/images/home/appicon.png" srcset="/assets/images/home/appicon@2x.png 2x" width="200" height="200"/>
-        <source media="(max-width: 600px)" srcset="/assets/images/home/appicon-half.png 1x, /assets/images/home/appicon.png 2x">
-      </picture>
-      <h1 class="section-header-xl vault">Pockity</h1>
-      <h2 class="subhead"><span>{{ site.description }}</span></h2>
+      <div id="logo-container">
+        <img src="/assets/images/home/appicon.png" srcset="/assets/images/home/appicon@2x.png 2x, /assets/images/home/appicon@3x.png 3x" width="92" height="92"/>
+        <h1 class="section-header-xl">Pockity</h1>  
+      </div>
+      <h2 class="subhead">{{ site.description }}</h2>
     </div>
 
-    {%- include storebuttons.html -%}
+    {%- include exploreButtons.html -%}
   </header>
   <main>
     {{ content }}

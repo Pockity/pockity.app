@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en-IN" }}">
+{%- include head.html -%}
+<link rel="me" href="https://social.dezinezync.com/@pockity" />
+<body class="{% if page.style %}{{ page.style }}{% endif %}">
+  {%- include osnav.html -%}
+  <header data-inviewport>
+    <div class="container">
+      <div id="logo-container">
+        <img src="/assets/images/home/appicon.png" srcset="/assets/images/home/appicon@2x.png 2x, /assets/images/home/appicon@3x.png 3x" width="92" height="92"/>
+        <h1 class="section-header-xl">Pockity</h1>  
+      </div>
+      <h2 class="subhead">{{ site.description }}</h2>
+    </div>
+  </header>
+  <main>
+    {{ content }}
+
+    {%- include storebuttons.html -%}
+  </main>
+
+  {%- include support.html -%}
+
+  {%- include footer.html -%}=
+</body>
+</html>

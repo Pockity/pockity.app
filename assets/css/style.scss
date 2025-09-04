@@ -5,16 +5,24 @@
 @import "variables";
 @import "buttons";
 
-@font-face {
-  font-family: "VaultAlarm";
-  src: local("VaultAlarm-Regular"),
-        url("../fonts/VaultAlarm-Regular.woff") format("woff"), 
-        url("../fonts/VaultAlarm-Regular.woff2") format("woff2");
-}
+// @font-face {
+//   font-family: "VaultAlarm";
+//   src: local("VaultAlarm-Regular"),
+//         url("../fonts/VaultAlarm-Regular.woff") format("woff"), 
+//         url("../fonts/VaultAlarm-Regular.woff2") format("woff2");
+// }
 
 html {
   font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
   quotes: "“" "”";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--dz-title-color);
+}
+
+p {
+  color: var(--dz-text-color);
 }
 
 picture {
@@ -39,6 +47,10 @@ picture {
   }
 }
 
+.always-dark {
+  color-scheme: dark;
+}
+
 header {
   nav a {
     font-size: 0.9rem;
@@ -52,13 +64,37 @@ header {
       margin-bottom: 0;
     }
   }
+
+  #logo-container {
+    display: flex; 
+    gap: 1rem; 
+    align-items: center; 
+    justify-content: center;
+    margin-bottom: 1rem;
+
+    img {
+      overflow: hidden;
+      border-radius: 28px;
+      box-shadow: 0 4px 8px color-mix(in display-p3, Canvas 80%, CanvasText);
+    }
+
+    h1 {
+      margin-bottom: 0;
+    }
+
+    & + h2 {
+      margin: 0 auto;
+      max-width: 25rem;
+    }
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
-  &.vault {
-    font-family: "VaultAlarm";
-    margin-bottom: var(--typography-spacing-vertical);
-  }
+  // &.vault {
+  //   font-family: "VaultAlarm";
+  //   margin-bottom: var(--typography-spacing-vertical);
+  // }
+  font-weight: 800;
 
   span {
     font-family: var(--font-family);
@@ -84,6 +120,14 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
+.card {
+  max-width: 100%;
+  background: var(--dz-grouped-background-color);
+  box-shadow: 0 6px 8px 0 rgba(0,0,0,0.03), 0 8px 24px 0 rgba(0,0,0,0.05);
+  border-radius: 40px;
+  padding: 40px;
+}
+
 footer {
   margin-top: 2rem;
 
@@ -91,6 +135,18 @@ footer {
     font-size: 0.7rem;
     color: var(--dz-color-subtext);
     margin-bottom: 0.5rem;
+  }
+}
+
+.flex {
+  display: flex;
+
+  &.rows {
+    flex-direction: rows;
+  }
+
+  &.columns {
+    flex-direction: column;
   }
 }
 
@@ -172,15 +228,53 @@ kbd {
       color: #1a1a1c;
     }
   }
+}
 
-  h1, h2, h3, h4, h5, h6 {
-    &.vault {
-      color: var(--dz-title-color);
+.fade {
+  position: relative;
+
+  & + * {
+    position: relative;
+    z-index: 2;
+  }
+
+  &.card-bg {
+    --dz-background-color: Canvas;
+  }
+
+  &.bot {
+    margin-bottom: -6rem;
+
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      bottom: 0;
+      left: 0;
+      pointer-events: none;
+      background-image: linear-gradient(to bottom, color-mix(in display-p3, var(--dz-background-color), transparent 90%), var(--dz-background-color) 90%);
+      width: 100%;
+      height: 8rem;
+    }
+  }
+
+  &.trailing {
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      pointer-events: none;
+      background-image: linear-gradient(to right, color-mix(in display-p3, var(--dz-background-color), transparent 90%), var(--dz-background-color) 90%);
+      width: 8rem;
+      height: 100%;
     }
   }
 }
 
 @import "layouts/home";
+@import "layouts/ios";
 @import "layouts/blog";
 @import "layouts/support";
 @import "layouts/mac";

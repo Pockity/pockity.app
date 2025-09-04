@@ -6,33 +6,39 @@ body.home {
     max-width: 100vw;
     overflow-x: hidden;
 
-    > picture {
-      max-width: 1130px;
-      display: block;
-      margin: 0 auto;
+    hgroup {
+      max-width: 58ch;
+      margin: 0 auto 1rem;
+
+      h2, h3, h4, h5, h6 {
+        font-weight: bold;
+
+        & + * {
+          margin-block-start: 0.8rem;
+        }
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      h3 {
+        font-size: 1.3rem;
+        font-weight: normal !important;
+      }
     }
   }
 
+  main > picture, picture#widgets {
+     max-width: 1130px;
+      display: block;
+      margin: 0 auto;
+  }
+
   > header {
-    padding-top: 10rem;
-    margin-bottom: 6rem;
+    padding-top: 4.62rem;
+    margin-bottom: 4.62rem;
     position: relative;
-
-    &:before {
-      position: absolute;
-      bottom: -34rem;
-      left: 50%;
-      content: '';
-      background: url(../images/headers/flame-100.png);
-      background-size: 100% 100%;
-      width: 1374px;
-      max-width: 100vw;
-      // height: 902px;
-      aspect-ratio: 1374/902;
-
-      z-index: 0;
-      transform: translateX(-50%);
-    }
 
     .container {
       text-align: center;
@@ -40,11 +46,20 @@ body.home {
       position: relative;
       z-index: 1;
     }
+
+    h1 {
+      font-size: 2.8rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 400;
+    }
   }
 
   #header-explore {
     max-width: 48ch;
-    margin-top: 5rem;
+    margin-top: 2rem;
 
     button {
       margin: 0 auto;
@@ -56,521 +71,112 @@ body.home {
     }
   }
 
+  #highlights .grid {
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        width: 40px;
+        height: 40px;
+        margin-block-end: 1rem;
+      }
+
+      p {
+        text-align: center;
+      }
+    }
+  }
+
   #home-hero {
     text-align: center;
     margin-bottom: 4rem;
-    position: relative;
-    z-index: 1;
-  }
-
-  main > .container:not(:last-of-type):not(.clear-bot) {
-    margin-bottom: 6rem;
   }
 
   .container.clear-bot {
     margin-bottom: 2rem;
   }
 
-  .pic-right, .pic-left, .pic-top, .pic-bottom {
-    display: flex;
-    overflow: visible;
-    gap: var(--grid-spacing-horizontal);
+  #widgets-pre {
+    margin-block-start: 5rem;
+  }
 
-    > * {
-      max-width: 50%;
-      flex-basis: 50%;
-      min-width: 0px;
+  picture#widgets {
+    margin-block-end: 5rem;
+  }
+
+  #focus-modes {
+    margin-bottom: 4rem;
+
+    h2, .card {
+      max-width: 620px;
     }
 
-    hgroup.v-center {
-      margin-top: auto;
-      margin-bottom: auto;
-    }
+    .card {
+      margin: 2rem auto 0;
+      // overflow-x: hidden;
 
-    .image-wrapper {
-      position: relative;
-      display: block;
-      align-self: center;
-      /*
-      // for debugging
-      &:after {
-        width: 100%;
-        height: 100%;
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-
-        background-color: rgba(255,0,0,0.2);
+      picture {
+        max-width: 100%;
+        max-width: calc(100% + 40px);
+        overflow-x: hidden;
       }
-      */
-    }
 
-    picture {
-      position: relative;
       img {
         max-width: 100vw;
         height: auto;
+        margin-bottom: 1rem;
+      }
+    }
+  }
 
-        &.center-t {
-          
+  #recurring-items {
+    margin-block-end: 4rem;
+
+    hgroup {
+      margin-block-end: 2rem;
+    }
+
+    .card {
+      max-width: 460px;
+      max-height: 453px;
+      overflow: hidden;
+      justify-self: center;
+
+      &[data-theme="dark"] {
+        padding: 0;
+        position: relative;
+        background: url(../images/home/recBackground.png);
+        display: flex;
+
+        > div {
+          z-index: 1;
+          margin: auto;
+          padding: 0 1rem 56px;
+
+          img {
+            margin-bottom: 16px;
+          }
         }
       }
     }
   }
 
-  .pic-top, .pic-bottom {
-    flex-direction: column;
-
-    > * {
-      max-width: 100%;
-      flex-basis: unset;
-      min-height: 0px;
-      min-width: unset;
-    }
+  #sharing {
+    margin-block: 4rem 0;
   }
+} /* body.main */
 
-  p.solo {
-    margin-bottom: 0;
-  }
+picture#hero-lockup {
+  display: block;
+  max-width: 100vw;
 
-  hgroup {
-    margin-bottom: 0;
-
-    p {
-      margin-bottom: var(--typography-spacing-vertical);
-      --typography-spacing-vertical: 0.9rem;
-
-      &:last-of-type {
-        margin-bottom: 0;
-      }
-    }
-
-    > *:last-child {
-      --color: var(--color);
-    }
-  }
-
-  #home-widgets {
-    hgroup {
-      align-self: center;
-    }
-  }
-
-  small:not(.section-title) {
+  img {
+    max-width: 100vw;
+    height: 463px;
     display: inline-block;
-    font-size: 0.75rem;
-    font-family: inherit;
-    font-weight: inherit;
-    color: var(--dz-subtext-color);
-  }
-
-  .section-title {
-    text-transform: uppercase;
-    letter-spacing: 0.025rem;
-    font-size: 0.7rem;
-    font-weight: 600;
-    color: var(--dz-subtext-color);
-
-    &.spacer-bot {
-      display: inline-block;
-      margin-bottom: 1rem;
-    }
-  }
-
-  #cap-editor {
-    @include gradient-text-linear(0deg, #8659FF, #2D56FF);
-  }
-
-  #cap-transactions {
-   @include gradient-text-linear(0deg, #FF7559, #FF2DB7); 
-  }
-
-  #cap-recurring {
-   @include gradient-text-linear(0deg, #3DCD14, #2DB8FF); 
-  }
-
-  #cap-notifications {
-   @include gradient-text-linear(0deg, #FF5A5A, #FFA752); 
-  }
-
-  #cap-stagemanager {
-    @include gradient-text-linear(90deg, #333, #ccc); 
-  }
-
-  #tiny-feat {
-    text-align: center;
-  }
-
-  #stagemanager {
-    background: #000;
-    margin-top: 3rem;
-
-    padding: 4rem 8rem;
-
-    .hero-image {
-      text-align: center;
-    }
-
-    .container.readable {
-      margin-top: 3rem;
-      text-align: center;
-
-      h3 {
-        color: #fff;
-      }
-
-      p {
-        color: #c9c9cc;
-      }
-    }
-  }
-
-  #home-editor, #home-reminders, #home-recurring {
-    hgroup {
-      position: relative;
-    }
-  }
-
-  #home-editor {
-    position: relative;
-    z-index: 1;
-
-    picture {
-      transform: translateX(-6rem);
-    }
-
-    &:before {
-      position: absolute;
-      bottom: -2rem;
-      right: -50%;
-      content: '';
-      background: url(../images/headers/flame-59.png);
-      background-size: 100% 100%;
-      max-width: 100vw;
-      width: 1242px;
-      height: 870px;
-
-      z-index: 0;
-      transform: translateX(-6rem);
-    }
-  }
-
-  #home-reminders, #home-recurring {
-    min-height: calc(100vh - 2.5rem);
-    position: relative;
-    z-index: 1;
-
-    .image-wrapper {
-      position: relative;
-      &:before {
-        position: absolute;
-        left: 3rem;
-        bottom: 2rem;
-        content: '';
-        background: url(../images/headers/flame-84.png);
-        background-size: 100% 100%;
-        max-width: 100vw;
-        width: 968px;
-        height: 977px;
-        aspect-ratio: 968/977;
-
-        z-index: 0;
-        transform: translate(-25%, 25%);
-      }
-    }
-  }
-
-  #home-recurring .image-wrapper:before {
-    background-image: url(../images/headers/flame-93.png);
-    width: 572px;
-    height: 753px;
-    aspect-ratio: 572/753;
-
-    left: 8rem;
-    bottom: 11rem;
-  }
-
-  #home-recurring hgroup {
-    top: -3rem;
-  }
-
-  #home-transactions {
-    position: relative;
-    margin-bottom: 3rem;
-    z-index: 1;
-
-    &:before {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      content: '';
-      background: url(../images/headers/flame-100.png);
-      background-size: 100% 100%;
-      max-width: 100vw;
-      width: 1242px;
-      height: 870px;
-
-      z-index: -1;
-      transform: translate(-50%, -50%);
-    }
-  }
-}
-
-// Apply the transtion when either:
-//   - the header is visible
-//   - the hero image is visible
-body.home > header.is-inViewport,
-body.home:has(#home-hero.is-inViewport) > header, 
-body.home #home-editor.is-inViewport,
-body.home #home-reminders .image-wrapper.is-inViewport,
-body.home #home-recurring .image-wrapper.is-inViewport,
-body.home #home-transactions.is-inViewport {
-  &:before {
-    -webkit-animation: fade 5s infinite;
-    animation: fade 5s infinite;
-    -moz-animation: fade 5s infinite;
-    -o-animation: fade 5s infinite;
-  }
-}
-
-// For reduced motion
-//   - disable the animation
-//   - reduce the opacity assuming requires increased constrast for legibility
-@media (prefers-reduced-motion) {
-  body.home > header.is-inViewport,
-  body.home:has(#home-hero.is-inViewport) > header, 
-  body.home #home-editor.is-inViewport,
-  body.home #home-reminders .image-wrapper.is-inViewport.inViewport,
-  body.home #home-recurring .image-wrapper.is-inViewport,
-  body.home #home-transactions.is-inViewport {
-    &:before {
-      opacity: 0.5;
-      -webkit-animation: none;
-      animation: none;
-      -moz-animation: none;
-      -o-animation: none;
-    }
-  }
-}
-
-@-webkit-keyframes fade {
-  0% {opacity: 0.45} 
-  50% {opacity: 1}
-  100% {opacity:0.45}
-}
-
-@-moz-keyframes fade{
-  0% {opacity: 0.45} 
-  50% {opacity: 1}
-  100% {opacity:0.45}  
-}
-
-@keyframes fade {
-  0% {opacity: 0.45} 
-  50% {opacity: 1}
-  100%{opacity: 0.45}
-}
-@-o-keyframes fade {
-  0% {opacity: 0.45} 
-  50% {opacity: 1}
-  100%{opacity: 0.45}
-}
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  body.home {
-    > header, #home-transactions {
-      &:before {
-        background-image: url(../images/headers/flame-100@2x.png);
-      }
-    }
-
-    #home-editor {
-      &:before {
-        background-image: url(../images/headers/flame-59@2x.png);
-      }
-    }
-
-    #home-reminders .image-wrapper {
-      &:before {
-        background-image: url(../images/headers/flame-84@2x.png);
-      }
-    }
-
-    #home-recurring .image-wrapper {
-      &:before {
-        background-image: url(../images/headers/flame-93@2x.png);
-      }
-    }
-  }
-}
-
-@media (max-width: 600px) {
-  body.home {
-    > header, #home-transactions {
-      &:before {
-        background-image: url(../images/headers/flame-100-400w.png);
-      }
-    }
-
-    #home-editor {
-      &:before {
-        background-image: url(../images/headers/flame-59-400w.png);
-      }
-    }
-
-    #home-reminders .image-wrapper {
-      &:before {
-        background-image: url(../images/headers/flame-84-400w.png);
-      }
-    }
-
-    #home-recurring .image-wrapper {
-      &:before {
-        background-image: url(../images/headers/flame-93-400w.png);
-      }
-    }
-  }
-}
-
-@media (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  body.home {
-    > header, #home-transactions {
-      &:before {
-        background-image: url(../images/headers/flame-100-800w.png);
-      }
-    }
-
-    #home-editor {
-      &:before {
-        background-image: url(../images/headers/flame-59-800w.png);
-      }
-    }
-
-    #home-reminders .image-wrapper {
-      &:before {
-        background-image: url(../images/headers/flame-84-800w.png);
-      }
-    }
-
-    #home-recurring .image-wrapper {
-      &:before {
-        background-image: url(../images/headers/flame-93-800w.png);
-      }
-    }
-  }
-}
-
-@media (min-width: 601px) and (max-width: 800px) {
-  body.home {
-    > header, #home-transactions {
-      &:before {
-        background-image: url(../images/headers/flame-100-800w.png);
-      }
-    }
-
-    #home-editor {
-      &:before {
-        background-image: url(../images/headers/flame-59-800w.png);
-      }
-    }
-
-    #home-reminders .image-wrapper {
-      &:before {
-        background-image: url(../images/headers/flame-84-400w.png);
-      }
-    }
-
-    #home-recurring .image-wrapper {
-      &:before {
-        background-image: url(../images/headers/flame-93-400w.png);
-      }
-    }
-  }
-}
-
-@media (min-width: 601px) and (max-width: 800px) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  body.home {
-    > header, #home-transactions {
-      &:before {
-        background-image: url(../images/headers/flame-100-1200w.png);
-      }
-    }
-
-    #home-editor {
-      &:before {
-        background-image: url(../images/headers/flame-59-1200w.png);
-      }
-    }
-
-    #home-reminders .image-wrapper {
-      &:before {
-        background-image: url(../images/headers/flame-84-1200w.png);
-      }
-    }
-
-    #home-recurring .image-wrapper {
-      &:before {
-        background-image: url(../images/headers/flame-93-1200w.png);
-      }
-    }
-  }
-}
-
-@media (min-width: 601px) and (max-width: 800px) and (-webkit-min-device-pixel-ratio: 3), (min-resolution: 384dpi) {
-  body.home {
-    > header, #home-transactions {
-      &:before {
-        background-image: url(../images/headers/flame-100-1600w.png);
-      }
-    }
-
-    #home-editor {
-      &:before {
-        background-image: url(../images/headers/flame-59-1600w.png);
-      }
-    }
-
-    #home-reminders .image-wrapper {
-      &:before {
-        background-image: url(../images/headers/flame-84-1600w.png);
-      }
-    }
-
-    #home-recurring .image-wrapper {
-      &:before {
-        background-image: url(../images/headers/flame-93-1600w.png);
-      }
-    }
-  }
-}
-
-@media (min-width: 415px) and (-webkit-min-device-pixel-ratio: 3), (min-resolution: 384dpi) {
-  body.home {
-    > header, #home-transactions {
-      &:before {
-        background-image: url(../images/headers/flame-100@3x.png);
-      }
-    }
-
-    #home-editor {
-      &:before {
-        background-image: url(../images/headers/flame-59@3x.png);
-      }
-    }
-
-    #home-reminders .image-wrapper {
-      &:before {
-        background-image: url(../images/headers/flame-84@3x.png);
-      }
-    }
-
-    #home-recurring .image-wrapper {
-      &:before {
-        background-image: url(../images/headers/flame-93@3x.png);
-      }
-    }
+    object-fit: cover
   }
 }
 
