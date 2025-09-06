@@ -188,14 +188,8 @@ body.home.macos {
 
 @media only screen and (max-width: 468px) {
   body.home.macos {
-    .cards-container ul li {
-      max-height: 80dvh;
-
-      .desc[data-theme="dark"] {
-        max-width: 100%;
-        max-width: 100vw;
-        max-width: calc(100vw - 4rem);
-      }
+    .cards-container {
+      display: none;
     }
   }
 }
