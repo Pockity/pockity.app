@@ -71,20 +71,24 @@ body.home {
     }
   }
 
-  #highlights .grid {
-    > div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+  #highlights {
+    margin-bottom: 2rem;
 
-      img {
-        width: 40px;
-        height: 40px;
-        margin-block-end: 1rem;
-      }
+    .grid {
+      > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-      p {
-        text-align: center;
+        img {
+          width: 40px;
+          height: 40px;
+          margin-block-end: 1rem;
+        }
+
+        p {
+          text-align: center;
+        }
       }
     }
   }
@@ -182,56 +186,7 @@ picture#hero-lockup {
 
 @media (max-width: 414px) and (orientation: portrait) {
   body.home {
-    > header, #home-transactions {
-      &:before {
-        max-width: 100vw;
-        height: auto;
-        aspect-ratio: 1374/902;
-        bottom: -24rem;
-      }
-    }
-
-    #home-editor {
-      picture {
-        transform: translateX(-5vw); 
-        img {
-          max-width: 150vw;
-        }
-      }
-
-      &:before {
-        max-width: 200vw;
-        height: auto;
-        aspect-ratio: 1242/870;
-        transform: none;
-      }
-    }
-
-    #home-reminders {
-      picture {
-        transform: translateX(-4vw); 
-      }
-
-      .image-wrapper:before {
-        max-width: 200vw;
-        height: auto;
-        left: -2rem;
-        bottom: 0;
-      }
-    }
-
-    #home-recurring {
-      picture {
-        transform: translateX(-10vw); 
-      }
-
-      .image-wrapper:before {
-        max-width: 100vw;
-        height: auto;
-        left: 5rem;
-        bottom: 8rem;
-      }
-    }
+    
   }
 }
 
@@ -254,60 +209,6 @@ picture#hero-lockup {
     small:not(.section-title), .section-title {
       font-size: 1rem;
     }
-
-    #home-transactions {
-      position: relative;
-      left: calc((200vw - 100%) * -0.5);
-
-      img {
-        max-width: 200vw;
-        object-fit: cover;
-      }
-    }
-
-    hgroup {
-      margin-bottom: 0;
-    }
-
-    h3.vault {
-      font-size: 3rem;
-
-      &.mobile-medium {
-        font-size: 2rem;
-      }
-    }
-
-    h4.vault {
-      font-size: 2.5rem;
-    }
-
-    #home-design .container:first-of-type {
-      margin-bottom: 2rem;
-    }
-
-    #tiny-feat {
-      .grid .x-large-border:last-of-type p br {
-        display: none;
-      }
-      
-      .x-large-border:not(:last-of-type) {
-        margin-bottom: 2rem;
-      }
-    }
-
-    #stagemanager {
-      padding-left: 0;
-      padding-right: 0;
-
-      img {
-        min-width: 100%;
-        max-width: 100%;
-
-        min-width: 100vw;
-        max-width: 100vw;
-        object-fit: cover;
-      }
-    }
   }
 }
 
@@ -317,31 +218,6 @@ picture#hero-lockup {
       position: relative;
       left: -2rem;
     }
-
-    #home-fence, #home-widgets {
-      text-align: center; 
-    }
-
-    #tiny-feat {
-      .grid .x-large-border {
-        margin-bottom: 3rem;
-      }
-
-      .grid:last-of-type .x-large-border:last-of-type {
-        margin-bottom: 0;
-      }
-
-      .grid .x-large-border:last-of-type p br {
-        display: none;
-      }
-    }
-
-    #stagemanager {
-      .hero-image {
-        position: relative;
-        left: calc((100vw - 100%) * -0.5 - 0.750rem);
-      }
-    }
   }
 }
 
@@ -349,24 +225,6 @@ picture#hero-lockup {
   body.home {
     main > picture + .container {
       padding-bottom: 2.5rem;
-    }
-
-    #home-editor {
-      .image-wrapper {
-        position: relative;
-        left: calc((100vw - 100%) * 0.5);
-      }
-    }
-
-    #home-recurring, #home-reminders {
-      .image-wrapper {
-        position: relative;
-        left: calc(((100vw - 100%) * 0.5) + 0.75rem); 
-      }
-    }
-
-    #stagemanager {
-      padding-top: calc((100vh - 100%) * 0.5);
     }
   }
 }
@@ -377,10 +235,42 @@ picture#hero-lockup {
       grid-row-gap: 1rem;
     }
 
+    .container {
+      max-width: 100%;
+      max-width: 100vw;
+      max-width: calc(100vw - 2rem);
+    }
+
     main > .container .grid > div {
       &.pic {
         grid-row-gap: 1rem;
         grid-template-columns: 1fr;
+      }
+    }
+
+    #highlights {
+      .grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    #recurring-items {
+      .grid {
+        .card {
+          max-height: unset;
+
+          &[data-theme="dark"] {
+            height: 453px;
+
+            div {
+              padding-bottom: 66px;
+            }
+          }
+        }
+
+        #recEditor {
+          transform: none !important;
+        }
       }
     }
   }

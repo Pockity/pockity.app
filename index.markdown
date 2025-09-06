@@ -5,35 +5,7 @@
 layout: home
 style: home
 ---
-
-<div class="container clear-bot" id="highlights">
-  <div class="grid">
-    <div>
-      <img src="/assets/images/home/interface.svg" width="40" height="40" />
-      <p>Beautiful Native UI</p>
-    </div>
-    <div>
-      <img src="/assets/images/home/currency.svg" width="40" height="40" />
-      <p>Currency Conversions</p>
-    </div>
-    <div>
-      <img src="/assets/images/home/windows.svg" width="40" height="40" />
-      <p>Widgets & Focus Mode</p>
-    </div>
-    <div>
-      <img src="/assets/images/home/recurring.svg" width="40" height="40" />
-      <p>Repeating Expenses</p>
-    </div>
-    <div>
-      <img src="/assets/images/home/privacy.svg" width="40" height="40" />
-      <p>Personal & Private</p>
-    </div>
-    <div>
-      <img src="/assets/images/home/cloudsharing.svg" width="40" height="40" />
-      <p>Family Plans & Sharing</p>
-    </div>
-  </div><!-- grid -->
-</div><!-- Container -->
+{%- include highlights.html -%}
 
 <picture id="home-hero">
   <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="/assets/images/home/hero-400w.png 1x, /assets/images/home/hero-800w.png 2x, /assets/images/home/hero-1600w.png 3x">
@@ -75,11 +47,6 @@ style: home
 </div>
 
 <picture id="widgets">
-  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="/assets/images/home/widgets-400w.png 1x, /assets/images/home/widgets-800w.png 2x, /assets/images/home/widgets-1600w.png 3x">
-  <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: light)" srcset="/assets/images/home/widgets-800w.png 1x, /assets/images/home/widgets-1600w.png 2x, /assets/images/home/widgets@3x.png 3x">
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/widgets-dark-400w.png 1x, /assets/images/home/widgets-dark-800w.png 2x, /assets/images/home/widgets-dark@2x.png 3x">
-  <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/widgets-dark-800w.png 1x, /assets/images/home/widgets-dark@2x.png 2x">
-  <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/widgets-dark.png 1x, /assets/images/home/widgets-dark@2x.png 2x, /assets/images/home/widgets-dark@3x.png 3x">
   <img src="/assets/images/home/widgets.png" srcset="/assets/images/home/widgets@2x.png 2x, /assets/images/home/widgets@3x.png 3x" width="1104" height="190" alt="Pockity's widgets: Weekly and Monthly statistics, Category statistics, Entry widget, and Lockscreen widgets"/>
 </picture>
 
@@ -91,16 +58,9 @@ style: home
 
   <div class="card" id="focusMode-card">
     <picture id="focusFilters" class="fade card-bg trailing">
-      <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="/assets/images/home/focusFilters-400w.png 1x, /assets/images/home/focusFilters-800w.png 2x, /assets/images/home/focusFilters-1600w.png 3x"/>
-      <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: light)" srcset="/assets/images/home/focusFilters-800w.png 1x, /assets/images/home/focusFilters-1600w.png 2x, /assets/images/home/focusFilters@3x.png 3x"/>
-      <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/focusFilters-dark-400w.png 1x, /assets/images/home/focusFilters-dark-800w.png 2x, /assets/images/home/focusFilters-dark@2x.png 3x"/>
-      <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/focusFilters-dark-800w.png 1x, /assets/images/home/focusFilters-dark@2x.png 2x"/>
-      <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/focusFilters-dark.png 1x, /assets/images/home/focusFilters-dark@2x.png 2x, /assets/images/home/focusFilters-dark@3x.png 3x"/>
-      <img src="/assets/images/home/focusFilters.png" srcset="/assets/images/home/focusFilters@2x.png 2x, /assets/images/home/focusFilters@3x.png 3x" width="887" height="81" alt="Pockity's focusFilters: Weekly and Monthly statistics, Category statistics, Entry widget, and Lockscreen focusFilters"/>
+     <img src="/assets/images/home/focusFilters.png" srcset="/assets/images/home/focusFilters@2x.png 2x, /assets/images/home/focusFilters@3x.png 3x" width="887" height="81" alt="Pockity's focusFilters: Weekly and Monthly statistics, Category statistics, Entry widget, and Lockscreen focusFilters"/>
     </picture>
-
     <p>Only ledgers you select in the focus filters will appear in the app’s UI. The app will continue to update the hidden ledgers in the background when changes occur to them from other devices.</p>
-
     <p>You can still create entries in other ledgers when focus mode is active or enabled. You can also quickly toggle focus mode from the app’s sidebar.</p>
   </div> <!-- card -->
 </div><!-- container -->

@@ -6,35 +6,6 @@ style: home ios
 description: Pockity for iOS, iPadOS, and watchOS brings simple, private, and fast budgeting and expense tracking with you, everywhere you go.
 ---
 
-<section class="container clear-bot" id="highlights">
-  <div class="grid">
-    <div>
-      <img src="/assets/images/home/interface.svg" width="40" height="40" />
-      <p>Beautiful Native UI</p>
-    </div>
-    <div>
-      <img src="/assets/images/home/currency.svg" width="40" height="40" />
-      <p>Currency Conversions</p>
-    </div>
-    <div>
-      <img src="/assets/images/home/windows.svg" width="40" height="40" />
-      <p>Widgets & Focus Mode</p>
-    </div>
-    <div>
-      <img src="/assets/images/home/recurring.svg" width="40" height="40" />
-      <p>Repeating Expenses</p>
-    </div>
-    <div>
-      <img src="/assets/images/home/privacy.svg" width="40" height="40" />
-      <p>Personal & Private</p>
-    </div>
-    <div>
-      <img src="/assets/images/home/cloudsharing.svg" width="40" height="40" />
-      <p>Family Plans & Sharing</p>
-    </div>
-  </div><!-- grid -->
-</section><!-- Container -->
-
 <picture id="ios-hero">
   <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="/assets/images/ios/hero-400w.png 1x, /assets/images/ios/hero-800w.png 2x, /assets/images/ios/hero-1600w.png 3x"/>
   <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: light)" srcset="/assets/images/ios/hero-800w.png 1x, /assets/images/ios/hero-1600w.png 2x, /assets/images/ios/hero@3x.png 3x"/>

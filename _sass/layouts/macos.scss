@@ -1,0 +1,209 @@
+body.home.macos {
+  main > section {
+    & + section {
+      margin-top: 5rem;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .desc {
+      text-align: center;
+      max-width: 620px;
+
+      h3 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.3rem;
+        line-height: 1.4;
+      }
+    }
+  }
+
+  .cards-container {
+    .cards-scroller {
+      padding: 1rem 0 2rem
+    }
+
+    ul {
+      li {
+        width: auto;
+        height: 630px;
+        max-height: calc(25vw * 16/9);
+
+        .card-item-content {
+          overflow: hidden;
+        }
+
+        .desc {
+          text-align: center;
+          max-width: 420px;
+          margin: 0 auto;
+
+          h4 {
+            font-size: 1.6rem;
+          }
+
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  section:has(#feature-scroller) {
+    overflow: visible;
+  }
+
+  #macos-compact {
+    margin-top: -150px;
+  }
+
+  #macos-summary {
+    margin-top: -150px;
+  }
+
+  .cards-container .card-item-content:has(#macos-quick) {
+    position: relative;
+    padding: 0;
+
+    .desc {
+      margin-top: 2rem;
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .cards-container li:has(div[data-theme="dark"]) {
+    .card-item-content {
+      width: fit-content;
+      padding: 0;
+      position: relative;
+
+      background: url(../images/macos/bulk.jpg) no-repeat;
+      background-position: -158px -168px;
+      background-size: 900px 784px;
+    }
+
+    .desc {
+      width: 100%;
+      max-width: 900px;
+      height: 630px;
+      height: calc(636px - 1rem);
+
+      display: flex;
+      flex-direction: column;
+
+      .space-top {
+        margin-top: auto;
+      }
+
+      h3, p {
+        mix-blend-mode: lighten;
+        max-width: 660px;
+      }
+
+      p {
+        color: rgba(255, 255, 255, 0.5);
+        color: color-mix(in display-p3, CanvasText, transparent 30%);
+      }
+    }
+  }
+
+  #macos-quick {
+    max-width: 678px;
+    position: relative;
+    // margin-left: -130px;
+    // margin-bottom: -8px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min--moz-device-pixel-ratio: 2),
+       only screen and (min-device-pixel-ratio: 2),
+       only screen and (min-resolution: 2dppx) {
+  body.home.macos {
+    .cards-container li:has(div[data-theme="dark"]) {
+      .card-item-content {
+        background-image: url(../images/macos/bulk@2x.jpg);
+      }
+    }
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 3),
+       only screen and (min--moz-device-pixel-ratio: 3),
+       only screen and (min-device-pixel-ratio: 3),
+       only screen and (min-resolution: 3dppx) {
+  body.home.macos {
+    .cards-container li:has(div[data-theme="dark"]) {
+      .card-item-content {
+        background-image: url(../images/macos/bulk@3x.jpg);
+      }
+    }
+  }
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+  body.home.macos {
+    .cards-container li:has(div[data-theme="dark"]) {
+      .card-item-content {
+        background-image: url(../images/macos/bulk-dark.jpg);
+      }
+    }
+  }
+}
+
+@media only screen and (prefers-color-scheme: dark) and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (prefers-color-scheme: dark) and (min--moz-device-pixel-ratio: 2),
+       only screen and (prefers-color-scheme: dark) and (min-device-pixel-ratio: 2),
+       only screen and (prefers-color-scheme: dark) and (min-resolution: 2dppx) {
+  body.home.macos {
+    .cards-container li:has(div[data-theme="dark"]) {
+      .card-item-content {
+        background-image: url(../images/macos/bulk-dark@2x.jpg);
+      }
+    }
+  }
+}
+
+@media only screen and (prefers-color-scheme: dark) and (-webkit-min-device-pixel-ratio: 3),
+       only screen and (prefers-color-scheme: dark) and (min--moz-device-pixel-ratio: 3),
+       only screen and (prefers-color-scheme: dark) and (min-device-pixel-ratio: 3),
+       only screen and (prefers-color-scheme: dark) and (min-resolution: 3dppx) {
+  body.home.macos {
+    .cards-container li:has(div[data-theme="dark"]) {
+      .card-item-content {
+        background-image: url(../images/macos/bulk-dark@3x.jpg);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 468px) {
+  body.home.macos {
+    .cards-container ul li {
+      max-height: 80dvh;
+
+      .desc[data-theme="dark"] {
+        max-width: 100%;
+        max-width: 100vw;
+        max-width: calc(100vw - 4rem);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 469px) and (max-width: 768px) {
+  body.home.macos {
+    .cards-container ul li {
+      max-height: 64vw;
+    }
+  }
+}

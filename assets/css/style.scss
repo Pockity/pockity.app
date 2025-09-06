@@ -21,8 +21,15 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--dz-title-color);
 }
 
+body.home {
+  p {
+    color: var(--dz-text-color);
+  }
+}
+
 p {
-  color: var(--dz-text-color);
+  letter-spacing: 0;
+  line-height: 1.4;
 }
 
 picture {
@@ -273,8 +280,195 @@ kbd {
   }
 }
 
+.phone-bezeled-v {
+  width: 312px;
+  height: 468px;
+  position: relative;
+
+  .bezel {
+    width: 189px;
+    height: 385px;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    background: url(../images/ios/phone-v-bezel.png) no-repeat;
+    background-size: 189px 385px;
+  }
+
+  .poster {
+    width: 171px;
+    height: 370px;
+
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    border-radius: 26px;
+    overflow: hidden;
+  }
+
+  .shadow {
+    width: 310px;
+    height: 468px;
+    display: block;
+
+    position: absolute;
+    top: 3px;
+    left: 0px;
+
+    background: url(../images/ios/phone-v-shadow.png) no-repeat;
+    background-size: 310px 468px;
+  }
+}
+
+.pad-bezeled-h {
+  width: 900px;
+  height: 720px;
+  position: relative;
+
+  .bezel {
+    width: 900px;
+    height: 720px;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    background: url(../images/ios/pad-h-bezel.png) no-repeat;
+    background-size: 900px 720px;
+  }
+
+  .poster {
+    width: 740px;
+    height: 555px;
+
+    position: absolute;
+    top: 30px;
+    left: 24.5px;
+
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid black;
+  }
+}
+
+.video-controls {
+  button {
+    display: inline;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    color: var(--dz-brand-color);
+    width: auto;
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+    margin: 0;
+
+    display: flex;
+    gap: 4px;
+
+    will-change: opacity;
+    transition: 0.2s opacity;
+
+    &:hover {
+      opacity: 0.65;
+    }
+
+    &[aria-hidden="true"] {
+      display: none;
+    }
+
+    img {
+      display: block;
+      align-self: center;
+    }
+  }
+}
+
+.phone-bezeled-v + .video-controls, .pad-bezeled-h + .video-controls {
+  margin-top: -60px;
+  position: relative;
+  z-index: 100;
+
+  width: 171px;
+  text-align: center;
+
+  button {
+    margin: 0 auto;
+  }
+}
+
+#sharing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .grid {
+    max-width: 940px;
+    margin-top: 1rem;
+
+    div {
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min--moz-device-pixel-ratio: 2),
+       only screen and (min-device-pixel-ratio: 2),
+       only screen and (min-resolution: 2dppx) {
+  .phone-bezeled-v {
+    .bezel {
+      background-image: url(../images/ios/phone-v-bezel@2x.png);
+    }
+
+    .shadow {
+      background-image: url(../images/ios/phone-v-shadow@2x.png); 
+    }
+  }
+
+  .pad-bezeled-h {
+    .bezel {
+      background-image: url(../images/ios/pad-h-bezel@2x.png);
+    }
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 3),
+       only screen and (min--moz-device-pixel-ratio: 3),
+       only screen and (min-device-pixel-ratio: 3),
+       only screen and (min-resolution: 3dppx) {
+  .phone-bezeled-v {
+    .bezel {
+      background-image: url(../images/ios/phone-v-bezel@3x.png);
+    }
+
+    .shadow {
+      background-image: url(../images/ios/phone-v-shadow@3x.png); 
+    }
+  }
+
+  .pad-bezeled-h {
+    .bezel {
+      background-image: url(../images/ios/pad-h-bezel@3x.png);
+    }
+  }
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+  header {
+    #logo-container {
+      img {
+        box-shadow: 0 4px 8px color-mix(in display-p3, black 40%, transparent 12%);
+      }
+    }
+  }
+}
+
 @import "layouts/home";
 @import "layouts/ios";
+@import "layouts/macos";
 @import "layouts/blog";
 @import "layouts/support";
 @import "layouts/mac";
