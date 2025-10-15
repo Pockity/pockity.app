@@ -10,6 +10,20 @@
       <hr />
       <li class="container readable">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {%- if post.bannerImage -%}
+          <picture id="post-banner">
+            <source media="(max-width: 600px)" srcset="{{ post.bannerImage | append: '-400w.png' | absolute_url }} 1x, {{ post.bannerImage | append: '-800w.png' | absolute_url }} 2x, {{ post.bannerImage | append: '-1600w.png' | absolute_url }} 3x">
+            <source media="(min-width: 601px) and (max-width: 800px)" srcset="{{ post.bannerImage | append: '-800w.png' | absolute_url }} 1x, {{ post.bannerImage | append: '-1600w.png' | absolute_url }} 2x, {{ post.bannerImage | append: '@3x.png' | absolute_url }} 3x">
+            <img src="{{ post.bannerImage | append: '.png' | absolute_url }}" srcset="{{ post.bannerImage | append: '@2x.png' | absolute_url }} 2x, {{ post.bannerImage | append: '@3x.png' | absolute_url }} 3x"/>
+          </picture>
+        {%- endif -%}
+        {%- if post.bannerImageWebP -%}
+          <picture id="post-banner">
+            <source media="(max-width: 600px)" srcset="{{ post.bannerImageWebP | append: '-400w.webp' | absolute_url }} 1x, {{ post.bannerImageWebP | append: '-800w.webp' | absolute_url }} 2x, {{ post.bannerImageWebP | append: '-1600w.webp' | absolute_url }} 3x">
+            <source media="(min-width: 601px) and (max-width: 800px)" srcset="{{ post.bannerImageWebP | append: '-800w.webp' | absolute_url }} 1x, {{ post.bannerImageWebP | append: '-1600w.webp' | absolute_url }} 2x, {{ post.bannerImageWebP | append: '@3x.webp' | absolute_url }} 3x">
+            <img src="{{ post.bannerImageWebP | append: '.webp' | absolute_url }}" srcset="{{ post.bannerImageWebP | append: '@2x.webp' | absolute_url }} 2x, {{ post.bannerImageWebP | append: '@3x.webp' | absolute_url }} 3x"/>
+          </picture>
+        {%- endif -%}
         <h3>
           <a class="post-link" href="{{ post.url | absolute_url }}">
             {{ post.title | escape }}

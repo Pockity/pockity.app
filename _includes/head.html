@@ -20,8 +20,12 @@
   {%- endif -%}
   {%- if page.bannerImage -%}
   <meta property="og:image" content="{{ page.bannerImage | append: '@2x.png' | absolute_url  }}" />
+  {%- elsif page.bannerImageWebP -%}
+  <meta property="og:image" content="{{ page.bannerImageWebP | append: '@2x.png' | absolute_url  }}" />
   {%- elsif post.bannerImage -%}
   <meta property="og:image" content="{{ post.bannerImage | append: '@2x.png' | absolute_url }}" />
+  {%- elsif post.bannerImageWebP -%}
+  <meta property="og:image" content="{{ post.bannerImageWebP | append: '@2x.png' | absolute_url }}" />
   {%- else -%}
   <meta property="og:image" content="{{ "/assets/images/home/hero-dark@2x.png" | absolute_url }}" />
   {%- endif -%}

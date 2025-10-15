@@ -13,7 +13,7 @@ description: Pockity for iOS, iPadOS, and watchOS brings simple, private, and fa
     <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/macos/hero-dark-400w.png 1x, /assets/images/macos/hero-dark-800w.png 2x, /assets/images/macos/hero-dark@2x.png 3x"/>
     <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/macos/hero-dark-800w.png 1x, /assets/images/macos/hero-dark@2x.png 2x"/>
     <source media="(prefers-color-scheme: dark)" srcset="/assets/images/macos/hero-dark.png 1x, /assets/images/macos/hero-dark@2x.png 2x, /assets/images/macos/hero-dark@3x.png 3x"/>
-    <img src="/assets/images/macos/hero.png" srcset="/assets/images/macos/hero@2x.png 2x, /assets/images/macos/hero@3x.png 3x" width="1393" height="636" alt="Left to right: Pockity's categories grid, a relaxed timeline of expenses, incomes, and transfers, and lastly a grid of recurring items"/>
+    <img loading="lazy" src="/assets/images/macos/hero.png" srcset="/assets/images/macos/hero@2x.png 2x, /assets/images/macos/hero@3x.png 3x" width="1393" height="636" alt="Left to right: Pockity's categories grid, a relaxed timeline of expenses, incomes, and transfers, and lastly a grid of recurring items"/>
   </picture>
   <div class="desc">
     <h3>Master your Spending Habits</h3>
@@ -28,7 +28,7 @@ description: Pockity for iOS, iPadOS, and watchOS brings simple, private, and fa
     <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/macos/reporting-dark-400w.png 1x, /assets/images/macos/reporting-dark-800w.png 2x, /assets/images/macos/reporting-dark@2x.png 3x"/>
     <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/macos/reporting-dark-800w.png 1x, /assets/images/macos/reporting-dark@2x.png 2x"/>
     <source media="(prefers-color-scheme: dark)" srcset="/assets/images/macos/reporting-dark.png 1x, /assets/images/macos/reporting-dark@2x.png 2x, /assets/images/macos/reporting-dark@3x.png 3x"/>
-    <img src="/assets/images/macos/reporting.png" srcset="/assets/images/macos/reporting@2x.png 2x, /assets/images/macos/reporting@3x.png 3x" width="858" height="442" alt="Month over Month spending and income report window from Pockity"/>
+    <img loading="lazy" src="/assets/images/macos/reporting.png" srcset="/assets/images/macos/reporting@2x.png 2x, /assets/images/macos/reporting@3x.png 3x" width="858" height="442" alt="Month over Month spending and income report window from Pockity"/>
   </picture>
   <div class="desc">
     <h3>Reporting, Done!</h3>
@@ -43,7 +43,7 @@ description: Pockity for iOS, iPadOS, and watchOS brings simple, private, and fa
     <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/macos/visualise-dark-400w.png 1x, /assets/images/macos/visualise-dark-800w.png 2x, /assets/images/macos/visualise-dark@2x.png 3x"/>
     <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/macos/visualise-dark-800w.png 1x, /assets/images/macos/visualise-dark@2x.png 2x"/>
     <source media="(prefers-color-scheme: dark)" srcset="/assets/images/macos/visualise-dark.png 1x, /assets/images/macos/visualise-dark@2x.png 2x, /assets/images/macos/visualise-dark@3x.png 3x"/>
-    <img src="/assets/images/macos/visualise.png" srcset="/assets/images/macos/visualise@2x.png 2x, /assets/images/macos/visualise@3x.png 3x" width="1020" height="690" alt="Sankey diagram visualising expenses for the current quarter in Pockity"/>
+    <img loading="lazy" src="/assets/images/macos/visualise.png" srcset="/assets/images/macos/visualise@2x.png 2x, /assets/images/macos/visualise@3x.png 3x" width="1020" height="690" alt="Sankey diagram visualising expenses for the current quarter in Pockity"/>
   </picture>
   <div class="desc">
     <h3>Visualise Like Never Before</h3>
@@ -65,7 +65,7 @@ description: Pockity for iOS, iPadOS, and watchOS brings simple, private, and fa
                   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/macos/compact-dark-400w.png 1x, /assets/images/macos/compact-dark-800w.png 2x, /assets/images/macos/compact-dark@2x.png 3x"/>
                   <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/macos/compact-dark-800w.png 1x, /assets/images/macos/compact-dark@2x.png 2x"/>
                   <source media="(prefers-color-scheme: dark)" srcset="/assets/images/macos/compact-dark.png 1x, /assets/images/macos/compact-dark@2x.png 2x, /assets/images/macos/compact-dark@3x.png 3x"/>
-                  <img src="/assets/images/macos/compact.png" srcset="/assets/images/macos/compact@2x.png 2x, /assets/images/macos/compact@3x.png 3x" width="840" height="568" alt="Sankey diagram visualising expenses for the current quarter in Pockity"/>
+                  <img loading="lazy" src="/assets/images/macos/compact.png" srcset="/assets/images/macos/compact@2x.png 2x, /assets/images/macos/compact@3x.png 3x" width="840" height="568" alt="Sankey diagram visualising expenses for the current quarter in Pockity"/>
                 </picture>
                 <div class="desc">
                   <h4>Compact, Customisable</h4>
@@ -83,7 +83,7 @@ description: Pockity for iOS, iPadOS, and watchOS brings simple, private, and fa
                   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/macos/summary-dark-400w.png 1x, /assets/images/macos/summary-dark-800w.png 2x, /assets/images/macos/summary-dark@2x.png 3x"/>
                   <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/macos/summary-dark-800w.png 1x, /assets/images/macos/summary-dark@2x.png 2x"/>
                   <source media="(prefers-color-scheme: dark)" srcset="/assets/images/macos/summary-dark.png 1x, /assets/images/macos/summary-dark@2x.png 2x, /assets/images/macos/summary-dark@3x.png 3x"/>
-                  <img src="/assets/images/macos/summary.png" srcset="/assets/images/macos/summary@2x.png 2x, /assets/images/macos/summary@3x.png 3x" width="840" height="568" alt="Sankey diagram visualising expenses for the current quarter in Pockity"/>
+                  <img loading="lazy" src="/assets/images/macos/summary.png" srcset="/assets/images/macos/summary@2x.png 2x, /assets/images/macos/summary@3x.png 3x" width="840" height="568" alt="Sankey diagram visualising expenses for the current quarter in Pockity"/>
                 </picture>
                 <div class="desc">
                   <h4>Summarise</h4>
@@ -105,7 +105,7 @@ description: Pockity for iOS, iPadOS, and watchOS brings simple, private, and fa
                   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/macos/quick-dark-400w.png 1x, /assets/images/macos/quick-dark-800w.png 2x, /assets/images/macos/quick-dark@2x.png 3x"/>
                   <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/macos/quick-dark-800w.png 1x, /assets/images/macos/quick-dark@2x.png 2x"/>
                   <source media="(prefers-color-scheme: dark)" srcset="/assets/images/macos/quick-dark.png 1x, /assets/images/macos/quick-dark@2x.png 2x, /assets/images/macos/quick-dark@3x.png 3x"/>
-                  <img src="/assets/images/macos/quick.png" srcset="/assets/images/macos/quick@2x.png 2x, /assets/images/macos/quick@3x.png 3x" width="840" height="568" alt="Sankey diagram visualising expenses for the current quarter in Pockity"/>
+                  <img loading="lazy" src="/assets/images/macos/quick.png" srcset="/assets/images/macos/quick@2x.png 2x, /assets/images/macos/quick@3x.png 3x" width="840" height="568" alt="Sankey diagram visualising expenses for the current quarter in Pockity"/>
                 </picture>
               </div>
             </div>
