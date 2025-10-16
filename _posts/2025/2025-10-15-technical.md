@@ -260,7 +260,7 @@ The simplest and purest form of dependency-injection, passing a derived value fr
 
 ---
 
-I hope I've shared a lot of how these new features were prototyped, designed, built, and refined over the last five months. These new widgets, dictation transcriber, and Apple Intelligence integration moves forward Pockity in a direction I did not imagine until a year ago. It all began a year ago when someone (thank you, you know who you are!) suggested the idea of transcribing voice notes to draft entries to me. 
+I hope I've shared a lot of how these new features were prototyped, designed, built, and refined over the last five months. These new widgets, dictation transcriber, and Apple Intelligence integration moves forward Pockity in a direction I did not imagine until a year ago. It all began a year ago when folks at the Developer Center in Bengaluru (thank you, you know who you are!) suggested the idea of transcribing voice notes to draft entries to me. 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/swift.min.js"></script>
