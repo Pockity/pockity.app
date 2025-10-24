@@ -8,12 +8,12 @@ style: home
 {%- include highlights.html -%}
 
 <picture id="home-hero">
-  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="/assets/images/home/hero-400w.png 1x, /assets/images/home/hero-800w.png 2x, /assets/images/home/hero-1600w.png 3x">
-  <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: light)" srcset="/assets/images/home/hero-800w.png 1x, /assets/images/home/hero-1600w.png 2x, /assets/images/home/hero@3x.png 3x">
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/hero-dark-400w.png 1x, /assets/images/home/hero-dark-800w.png 2x, /assets/images/home/hero-dark@2x.png 3x">
-  <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/hero-dark-800w.png 1x, /assets/images/home/hero-dark@2x.png 2x">
-  <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/hero-dark.png 1x, /assets/images/home/hero-dark@2x.png 2x, /assets/images/home/hero-dark@3x.png 3x">
-  <img loading="lazy" src="/assets/images/home/hero.png" srcset="/assets/images/home/hero@2x.png 2x, /assets/images/home/hero@3x.png 3x" width="1400" height="1277" alt="Pockity's ledger timeline displayed on an iPad Pro 12.9 inches and iPhone 16 Pro, watchOS interface, and a shared ledger timeline on iPhone 16 Pro"/>
+  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="/assets/images/home/hero-400w.webp 1x, /assets/images/home/hero-800w.webp 2x, /assets/images/home/hero-1600w.webp 3x">
+  <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: light)" srcset="/assets/images/home/hero-800w.webp 1x, /assets/images/home/hero-1600w.webp 2x, /assets/images/home/hero@3x.webp 3x">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/hero-dark-400w.webp 1x, /assets/images/home/hero-dark-800w.webp 2x, /assets/images/home/hero-dark@2x.webp 3x">
+  <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/hero-dark-800w.webp 1x, /assets/images/home/hero-dark@2x.webp 2x">
+  <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/hero-dark.webp 1x, /assets/images/home/hero-dark@2x.webp 2x, /assets/images/home/hero-dark@3x.webp 3x">
+  <img loading="lazy" src="/assets/images/home/hero.webp" srcset="/assets/images/home/hero@2x.webp 2x, /assets/images/home/hero@3x.webp 3x" width="1400" height="1277" alt="Pockity's ledger timeline displayed on an iPad Pro 12.9 inches and iPhone 16 Pro, watchOS interface, and a shared ledger timeline on iPhone 16 Pro"/>
 </picture>
 
 <div class="container clear-bot">
@@ -41,13 +41,15 @@ style: home
 
 <div class="container clear-bot center" id="widgets-pre">
   <hgroup>
-    <h2>Insightful. Interactive.</h2>
+    <h2>Striking. Interactive.</h2>
     <h3 class="subhead">Pockity’s widgets brings insights from your expenses and earnings, right to your homescreen and desktop.</h3>
   </hgroup>
 </div>
 
 <picture id="widgets">
-  <img loading="lazy" src="/assets/images/home/widgets.png" srcset="/assets/images/home/widgets@2x.png 2x, /assets/images/home/widgets@3x.png 3x" width="1104" height="190" alt="Pockity's widgets: Weekly and Monthly statistics, Category statistics, Entry widget, and Lockscreen widgets"/>
+  <source media="(max-width: 600px)" srcset="/assets/images/home/widgets-400w.webp 1x, /assets/images/home/widgets-800w.webp 2x, /assets/images/home/widgets-1600w.webp 3x">
+  <source media="(min-width: 601px) and (max-width: 800px)" srcset="/assets/images/home/widgets-800w.webp 1x, /assets/images/home/widgets-1600w.webp 2x, /assets/images/home/widgets@3x.webp 3x">
+  <img loading="lazy" src="/assets/images/home/widgets.webp" srcset="/assets/images/home/widgets@2x.webp 2x, /assets/images/home/widgets@3x.webp 3x" width="1105" height="382" alt="Pockity's widgets: Income, Transfers, Expeneses (Leisure), and Lockscreen widgets"/>
 </picture>
 
 <div class="container clear-bot center" id="focus-modes">
@@ -58,7 +60,9 @@ style: home
 
   <div class="card" id="focusMode-card">
     <picture id="focusFilters" class="fade card-bg trailing">
-     <img loading="lazy" src="/assets/images/home/focusFilters.png" srcset="/assets/images/home/focusFilters@2x.png 2x, /assets/images/home/focusFilters@3x.png 3x" width="887" height="81" alt="Pockity's focusFilters: Weekly and Monthly statistics, Category statistics, Entry widget, and Lockscreen focusFilters"/>
+      <source media="(max-width: 600px)" srcset="/assets/images/home/focusFilters-400w.webp 1x, /assets/images/home/focusFilters-800w.webp 2x, /assets/images/home/focusFilters-1600w.webp 3x"/>
+      <source media="(min-width: 601px) and (max-width: 800px)" srcset="/assets/images/home/focusFilters-800w.webp 1x, /assets/images/home/focusFilters-1600w.webp 2x, /assets/images/home/focusFilters@3x.webp 3x"/>
+     <img loading="lazy" src="/assets/images/home/focusFilters.webp" srcset="/assets/images/home/focusFilters@2x.webp 2x, /assets/images/home/focusFilters@3x.webp 3x" width="887" height="81" alt="Pockity's focusFilters: Weekly and Monthly statistics, Category statistics, Entry widget, and Lockscreen focusFilters"/>
     </picture>
     <p>Only ledgers you select in the focus filters will appear in the app’s UI. The app will continue to update the hidden ledgers in the background when changes occur to them from other devices.</p>
     <p>You can still create entries in other ledgers when focus mode is active or enabled. You can also quickly toggle focus mode from the app’s sidebar.</p>

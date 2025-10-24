@@ -7,6 +7,10 @@
     margin: 0 auto;
   }
 
+  .section-header-xl {
+    font-size: 2rem;
+  }
+
   #cap-support {
     @include gradient-text-linear(0deg, #8659FF, #2D56FF);
   }
