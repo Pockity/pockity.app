@@ -7,12 +7,12 @@ description: Pockity for iOS, iPadOS, and watchOS brings simple, private, and fa
 ---
 
 <picture id="ios-hero">
-  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="/assets/images/ios/hero-400w.png 1x, /assets/images/ios/hero-800w.png 2x, /assets/images/ios/hero-1600w.png 3x"/>
-  <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: light)" srcset="/assets/images/ios/hero-800w.png 1x, /assets/images/ios/hero-1600w.png 2x, /assets/images/ios/hero@3x.png 3x"/>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/ios/hero-dark-400w.png 1x, /assets/images/ios/hero-dark-800w.png 2x, /assets/images/ios/hero-dark@2x.png 3x"/>
-  <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/ios/hero-dark-800w.png 1x, /assets/images/ios/hero-dark@2x.png 2x"/>
-  <source media="(prefers-color-scheme: dark)" srcset="/assets/images/ios/hero-dark.png 1x, /assets/images/ios/hero-dark@2x.png 2x, /assets/images/ios/hero-dark@3x.png 3x"/>
-  <img loading="lazy" src="/assets/images/ios/hero.png" srcset="/assets/images/ios/hero@2x.png 2x, /assets/images/ios/hero@3x.png 3x" width="1281" height="566" alt="Pockity's ledger timeline displayed on an iPad Pro 12.9 inches and iPhone 16 Pro, watchOS interface, and a shared ledger timeline on iPhone 16 Pro"/>
+  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="/assets/images/ios/hero-400w.webp 1x, /assets/images/ios/hero-800w.webp 2x, /assets/images/ios/hero-1600w.webp 3x"/>
+  <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: light)" srcset="/assets/images/ios/hero-800w.webp 1x, /assets/images/ios/hero-1600w.webp 2x, /assets/images/ios/hero@3x.webp 3x"/>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/ios/hero-dark-400w.webp 1x, /assets/images/ios/hero-dark-800w.webp 2x, /assets/images/ios/hero-dark@2x.webp 3x"/>
+  <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/ios/hero-dark-800w.webp 1x, /assets/images/ios/hero-dark@2x.webp 2x"/>
+  <source media="(prefers-color-scheme: dark)" srcset="/assets/images/ios/hero-dark.webp 1x, /assets/images/ios/hero-dark@2x.webp 2x, /assets/images/ios/hero-dark@3x.webp 3x"/>
+  <img loading="lazy" src="/assets/images/ios/hero.webp" srcset="/assets/images/ios/hero@2x.webp 2x, /assets/images/ios/hero@3x.webp 3x" width="1281" height="566" alt="Pockity's ledger timeline displayed on an iPad Pro 12.9 inches and iPhone 16 Pro, watchOS interface, and a shared ledger timeline on iPhone 16 Pro"/>
 </picture>
 
 <section class="container" id="everywhere">
@@ -54,12 +54,12 @@ description: Pockity for iOS, iPadOS, and watchOS brings simple, private, and fa
     </div> <!--Video container -->
     <div>
       <picture>
-        <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="/assets/images/ios/everywhere-400w.png 1x, /assets/images/ios/everywhere-800w.png 2x, /assets/images/ios/everywhere-1600w.png 3x"/>
-        <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: light)" srcset="/assets/images/ios/everywhere-800w.png 1x, /assets/images/ios/everywhere-1600w.png 2x, /assets/images/ios/everywhere@3x.png 3x"/>
-        <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/ios/everywhere-dark-400w.png 1x, /assets/images/ios/everywhere-dark-800w.png 2x, /assets/images/ios/everywhere-dark@2x.png 3x"/>
-        <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/ios/everywhere-dark-800w.png 1x, /assets/images/ios/everywhere-dark@2x.png 2x"/>
-        <source media="(prefers-color-scheme: dark)" srcset="/assets/images/ios/everywhere-dark.png 1x, /assets/images/ios/everywhere-dark@2x.png 2x, /assets/images/ios/everywhere-dark@3x.png 3x"/>
-        <img loading="lazy" src="/assets/images/ios/everywhere.png" srcset="/assets/images/ios/everywhere@2x.png 2x, /assets/images/ios/everywhere@3x.png 3x" width="884" height="472" alt="iPhone 16 Pro showing the Food category's expenses as well its trends graph, and an iPad Pro 12.9in showing a sankey chart of expense and income breakdowns over this present year."/>
+        <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="/assets/images/ios/everywhere-400w.webp 1x, /assets/images/ios/everywhere-800w.webp 2x, /assets/images/ios/everywhere-1600w.webp 3x"/>
+        <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: light)" srcset="/assets/images/ios/everywhere-800w.webp 1x, /assets/images/ios/everywhere-1600w.webp 2x, /assets/images/ios/everywhere@3x.webp 3x"/>
+        <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/ios/everywhere-dark-400w.webp 1x, /assets/images/ios/everywhere-dark-800w.webp 2x, /assets/images/ios/everywhere-dark@2x.webp 3x"/>
+        <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/ios/everywhere-dark-800w.webp 1x, /assets/images/ios/everywhere-dark@2x.webp 2x"/>
+        <source media="(prefers-color-scheme: dark)" srcset="/assets/images/ios/everywhere-dark.webp 1x, /assets/images/ios/everywhere-dark@2x.webp 2x, /assets/images/ios/everywhere-dark@3x.webp 3x"/>
+        <img loading="lazy" src="/assets/images/ios/everywhere.webp" srcset="/assets/images/ios/everywhere@2x.webp 2x, /assets/images/ios/everywhere@3x.webp 3x" width="884" height="472" alt="iPhone 16 Pro showing the Food category's expenses as well its trends graph, and an iPad Pro 12.9in showing a sankey chart of expense and income breakdowns over this present year."/>
       </picture>
     </div>
   </div><!-- Flex columns -->
@@ -136,12 +136,12 @@ description: Pockity for iOS, iPadOS, and watchOS brings simple, private, and fa
 </div><!-- cards-container -->
 <section class="container" id="ipados">
   <picture>
-    <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="/assets/images/ios/ipados-400w.png 1x, /assets/images/ios/ipados-800w.png 2x, /assets/images/ios/ipados-1600w.png 3x"/>
-    <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: light)" srcset="/assets/images/ios/ipados-800w.png 1x, /assets/images/ios/ipados-1600w.png 2x, /assets/images/ios/ipados@3x.png 3x"/>
-    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/ios/ipados-dark-400w.png 1x, /assets/images/ios/ipados-dark-800w.png 2x, /assets/images/ios/ipados-dark@2x.png 3x"/>
-    <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/ios/ipados-dark-800w.png 1x, /assets/images/ios/ipados-dark@2x.png 2x"/>
-    <source media="(prefers-color-scheme: dark)" srcset="/assets/images/ios/ipados-dark.png 1x, /assets/images/ios/ipados-dark@2x.png 2x, /assets/images/ios/ipados-dark@3x.png 3x"/>
-    <img loading="lazy" src="/assets/images/ios/ipados.png" srcset="/assets/images/ios/ipados@2x.png 2x, /assets/images/ios/ipados@3x.png 3x" width="1081" height="571" alt="Pockity's account section on iPads can display larger data ranges for deep dives in account spendings, broken down by category."/>
+    <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="/assets/images/ios/ipados-400w.webp 1x, /assets/images/ios/ipados-800w.webp 2x, /assets/images/ios/ipados-1600w.webp 3x"/>
+    <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: light)" srcset="/assets/images/ios/ipados-800w.webp 1x, /assets/images/ios/ipados-1600w.webp 2x, /assets/images/ios/ipados@3x.webp 3x"/>
+    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/ios/ipados-dark-400w.webp 1x, /assets/images/ios/ipados-dark-800w.webp 2x, /assets/images/ios/ipados-dark@2x.webp 3x"/>
+    <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/ios/ipados-dark-800w.webp 1x, /assets/images/ios/ipados-dark@2x.webp 2x"/>
+    <source media="(prefers-color-scheme: dark)" srcset="/assets/images/ios/ipados-dark.webp 1x, /assets/images/ios/ipados-dark@2x.webp 2x, /assets/images/ios/ipados-dark@3x.webp 3x"/>
+    <img loading="lazy" src="/assets/images/ios/ipados.webp" srcset="/assets/images/ios/ipados@2x.webp 2x, /assets/images/ios/ipados@3x.webp 3x" width="1143" height="607" alt="Pockity's account section on iPads can display larger data ranges for deep dives in account spendings, broken down by category." style="transform:translateX(4rem);"/>
   </picture>
   <div class="readable">
     <h3>Take it to the Max</h3>
