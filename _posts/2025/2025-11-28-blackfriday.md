@@ -12,10 +12,10 @@ If you have not previously purchased Pockity+ on iOS or macOS, now is your chang
 
 ### iOS 
 - [Pockity+](https://apps.apple.com/redeem?ctx=offercodes&id=1475098830&code=BLACKFRIDAY2025&ct=website&mt=8)
-- [Pockity+ for Family](https://apps.apple.com/redeem?ctx=offercodes&id=1475098830&code=PFBLACKFRIDAY2025&ct=indieapp2025&mt=8)
+- [Pockity+ for Family](https://apps.apple.com/redeem?ctx=offercodes&id=1475098830&code=PFBLACKFRIDAY2025&ct=website&mt=8)
 
 ### macOS 
-- [Pockity+](https://apps.apple.com/redeem?ctx=offercodes&id=1475098830&code=PMBLACKFRIDAY2025&ct=indieapp2025&mt=8)
-- [Pockity+ for Family](https://apps.apple.com/redeem?ctx=offercodes&id=1475098830&code=PMFBLACKFRIDAY2025&ct=indieapp2025&mt=8)
+- [Pockity+](https://apps.apple.com/redeem?ctx=offercodes&id=1475098830&code=PMBLACKFRIDAY2025&ct=website&mt=8)
+- [Pockity+ for Family](https://apps.apple.com/redeem?ctx=offercodes&id=1475098830&code=PMFBLACKFRIDAY2025&ct=website&mt=8)
 
 Happy Holidays! 
