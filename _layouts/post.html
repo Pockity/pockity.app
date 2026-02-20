@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en-IN" }}">
 {%- include "head.html" -%}
-<body{% if style or body_class %} class="{% if style %}{{ style }} {% endif %}{{ body_class | default: "blog" }}"{% endif %}>
+<body class="{% if style %}{{ style }} {% endif %}{{ body_class | default: "blog" }}">
   {%- include "blogHeader.html" -%}
   {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
   <main>
