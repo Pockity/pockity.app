@@ -31,7 +31,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("absolute_url", (url) => {
-    const isProduction = process.argv.includes("--production");
+    const isProduction = process.env.ELEVENTY_ENV === "production";
     const baseUrl = isProduction ? "https://pockity.app" : "http://localhost:8080";
     return new URL(url, baseUrl).href;
   });
@@ -42,7 +42,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets/js");
   eleventyConfig.addPassthroughCopy("assets/videos");
   eleventyConfig.addPassthroughCopy("CNAME");
-  eleventyConfig.addPassthroughCopy("favicon.ico"); // Check if this exists
 
   // Layout aliases
   eleventyConfig.addLayoutAlias("post", "post.html");
