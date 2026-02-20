@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en-IN" }}">
-{%- include head.html -%}
+{%- include "head.html" -%}
 <link rel="me" href="https://social.dezinezync.com/@pockity" />
-<body class="{% if page.style %}{{ page.style }}{% endif %}">
-  {%- include osnav.html -%}
+<body{% if style %} class="{{ style }}"{% endif %}>
+  {%- include "osnav.html" -%}
   <header data-inviewport>
     <div class="container">
       <div id="logo-container">
@@ -14,15 +14,15 @@
     </div>
   </header>
   <main>
-    {%- include highlights.html -%}
+    {%- include "highlights.html" -%}
     {{ content }}
 
-    {%- include sharing.html -%}
-    {%- include storebuttons.html -%}
+    {%- include "sharing.html" -%}
+    {%- include "storebuttons.html" -%}
   </main>
 
-  {%- include support.html -%}
+  {%- include "support.html" -%}
 
-  {%- include footer.html -%}=
+  {%- include "footer.html" -%}=
 </body>
 </html>

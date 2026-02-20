@@ -1,0 +1,8 @@
+_sass
+_site
+node_modules
+.jekyll-cache
+Gemfile
+Gemfile.lock
+_config.yml
+README.md

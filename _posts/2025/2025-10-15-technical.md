@@ -1,7 +1,7 @@
 ---
 layout: post
 title: October 2025 Release - Behind the Tech
-date: 2025-10-15 18:30:00 +0530
+date: 2025-10-15T18:30:00+05:30
 categories: iOS,macOS,technical,notes,explainer,code
 bannerImageWebP: /assets/images/posts/20251018-1/banner
 ---

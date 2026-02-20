@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Pockity for macOS
-date:   2023-08-08 10:00:00 +0530
+date: 2023-08-08T10:00:00+05:30
 categories: macos,release,notes
 bannerImage: /assets/images/posts/20230808-maclaunch/banner
 excerpt: Pockity for macOS is now generally available on the Mac App Store.

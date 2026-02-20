@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Black Friday 2025 Deals
-date: 2025-11-28 07:20:00 +0530
+date: 2025-11-28T07:20:00+05:30
 categories: iOS,macOS,blackfriday,deals
 bannerImageWebP: /assets/images/posts/20251018-1/banner
 ---

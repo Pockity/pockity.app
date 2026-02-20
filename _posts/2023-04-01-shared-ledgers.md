@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Introducing Shared Ledgers
-date:   2023-04-01 09:00:00 +0530
+date: 2023-04-01T09:00:00+05:30
 categories: update,ios,release,feature
 bannerImage: /assets/images/posts/20230401-sharedledgers/banner
 excerpt: Shared ledgers enable you to track expenses and budgets with your friends and family. Available now in Pockity v2023.4 for iOS and iPadOS.

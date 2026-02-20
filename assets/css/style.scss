@@ -1,9 +1,7 @@
----
----
-
-@import "{{ site.theme }}";
-@import "variables";
-@import "buttons";
+@import "../../_sass/launchkit";
+@import "../../_sass/mixins";
+@import "../../_sass/variables";
+@import "../../_sass/buttons";
 
 // @font-face {
 //   font-family: "VaultAlarm";
@@ -466,10 +464,10 @@ kbd {
   }
 }
 
-@import "layouts/home";
-@import "layouts/ios";
-@import "layouts/macos";
-@import "layouts/blog";
-@import "layouts/support";
-@import "layouts/mac";
-@import "layouts/custom";
+@import "../../_sass/layouts/home";
+@import "../../_sass/layouts/ios";
+@import "../../_sass/layouts/macos";
+@import "../../_sass/layouts/blog";
+@import "../../_sass/layouts/support";
+@import "../../_sass/layouts/mac";
+@import "../../_sass/layouts/custom";

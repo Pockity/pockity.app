@@ -1,0 +1,47 @@
+---
+permalink: /feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+  xmlns:media="http://search.yahoo.com/mrss/"
+  >
+  <channel>
+    <title>{{ site.title }}</title>
+    <link>{{ site.url }}{{ site.baseurl }}/</link>
+    <description>{{ site.description }}</description>
+    <pubDate>{{ collections.posts | rssLastUpdatedDate }}</pubDate>
+    <language>en</language>
+    <image>
+      <url>{{ "/assets/images/appicon/appicon@2x.png" | absolute_url }}</url>
+      <title>{{ site.title }}</title>
+      <link>{{ site.url }}{{ site.baseurl }}/</link>
+      <width>128</width>
+      <height>128</height>
+    </image>
+    <link rel="self" href="{{ "/feed.xml" | absolute_url }}" xmlns="http://www.w3.org/2005/Atom"/>
+    <link rel="hub" href="https://websubhub.com/hub" xmlns="http://www.w3.org/2005/Atom"/>
+    {% assign posts = collections.posts | reverse %}
+    {% for post in posts limit: 10 %}
+      <item>
+        <title>{{ post.data.title }}</title>
+        <link>{{ post.url | absolute_url }}</link>
+        <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
+        <description><![CDATA[
+        {{ post.templateContent }}
+        ]]></description>
+        <pubDate>{{ post.date | rssDate }}</pubDate>
+        <author>support@pockity.app (Nikhil)</author>
+        {%- if post.data.bannerImage -%}
+        <media:content url="{{ post.data.bannerImage | append: '-1200w.png' | absolute_url }}" medium="image" lang="en"/>
+        {%- endif -%}
+      </item>
+    {% endfor %}
+  </channel>
+</rss>

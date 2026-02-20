@@ -1,48 +1,49 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en-IN" }}">
-{%- include head.html -%}
-<body class="{% if page.style %}{{ page.style }}{% endif %} blog">
-  {%- include blogHeader.html -%}
+{%- include "head.html" -%}
+<body{% if style or body_class %} class="{% if style %}{{ style }} {% endif %}{{ body_class | default: "blog" }}"{% endif %}>
+  {%- include "blogHeader.html" -%}
   <main>
-    {%- if paginator.total_pages > 0 -%}
+    {%- if pagination.pages.length > 0 -%}
     <ul class="post-list">
-      {%- for post in paginator.posts -%}
+      {%- for post in posts -%}
       <hr />
       <li class="container readable">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {%- if post.bannerImage -%}
+        {%- if post.data.bannerImage -%}
           <picture id="post-banner">
-            <source media="(max-width: 600px)" srcset="{{ post.bannerImage | append: '-400w.png' | absolute_url }} 1x, {{ post.bannerImage | append: '-800w.png' | absolute_url }} 2x, {{ post.bannerImage | append: '-1600w.png' | absolute_url }} 3x">
-            <source media="(min-width: 601px) and (max-width: 800px)" srcset="{{ post.bannerImage | append: '-800w.png' | absolute_url }} 1x, {{ post.bannerImage | append: '-1600w.png' | absolute_url }} 2x, {{ post.bannerImage | append: '@3x.png' | absolute_url }} 3x">
-            <img src="{{ post.bannerImage | append: '.png' | absolute_url }}" srcset="{{ post.bannerImage | append: '@2x.png' | absolute_url }} 2x, {{ post.bannerImage | append: '@3x.png' | absolute_url }} 3x"/>
+            <source media="(max-width: 600px)" srcset="{{ post.data.bannerImage | append: '-400w.png' | absolute_url }} 1x, {{ post.data.bannerImage | append: '-800w.png' | absolute_url }} 2x, {{ post.data.bannerImage | append: '-1600w.png' | absolute_url }} 3x">
+            <source media="(min-width: 601px) and (max-width: 800px)" srcset="{{ post.data.bannerImage | append: '-800w.png' | absolute_url }} 1x, {{ post.data.bannerImage | append: '-1600w.png' | absolute_url }} 2x, {{ post.data.bannerImage | append: '@3x.png' | absolute_url }} 3x">
+            <img src="{{ post.data.bannerImage | append: '.png' | absolute_url }}" srcset="{{ post.data.bannerImage | append: '@2x.png' | absolute_url }} 2x, {{ post.data.bannerImage | append: '@3x.png' | absolute_url }} 3x"/>
           </picture>
         {%- endif -%}
-        {%- if post.bannerImageWebP -%}
+        {%- if post.data.bannerImageWebP -%}
           <picture id="post-banner">
-            <source media="(max-width: 600px)" srcset="{{ post.bannerImageWebP | append: '-400w.webp' | absolute_url }} 1x, {{ post.bannerImageWebP | append: '-800w.webp' | absolute_url }} 2x, {{ post.bannerImageWebP | append: '-1600w.webp' | absolute_url }} 3x">
-            <source media="(min-width: 601px) and (max-width: 800px)" srcset="{{ post.bannerImageWebP | append: '-800w.webp' | absolute_url }} 1x, {{ post.bannerImageWebP | append: '-1600w.webp' | absolute_url }} 2x, {{ post.bannerImageWebP | append: '@3x.webp' | absolute_url }} 3x">
-            <img src="{{ post.bannerImageWebP | append: '.webp' | absolute_url }}" srcset="{{ post.bannerImageWebP | append: '@2x.webp' | absolute_url }} 2x, {{ post.bannerImageWebP | append: '@3x.webp' | absolute_url }} 3x"/>
+            <source media="(max-width: 600px)" srcset="{{ post.data.bannerImageWebP | append: '-400w.webp' | absolute_url }} 1x, {{ post.data.bannerImageWebP | append: '-800w.webp' | absolute_url }} 2x, {{ post.data.bannerImageWebP | append: '-1600w.webp' | absolute_url }} 3x">
+            <source media="(min-width: 601px) and (max-width: 800px)" srcset="{{ post.data.bannerImageWebP | append: '-800w.webp' | absolute_url }} 1x, {{ post.data.bannerImageWebP | append: '-1600w.webp' | absolute_url }} 2x, {{ post.data.bannerImageWebP | append: '@3x.webp' | absolute_url }} 3x">
+            <img src="{{ post.data.bannerImageWebP | append: '.webp' | absolute_url }}" srcset="{{ post.data.bannerImageWebP | append: '@2x.webp' | absolute_url }} 2x, {{ post.data.bannerImageWebP | append: '@3x.webp' | absolute_url }} 3x"/>
           </picture>
         {%- endif -%}
         <h3>
           <a class="post-link" href="{{ post.url | absolute_url }}">
-            {{ post.title | escape }}
+            {{ post.data.title | escape }}
           </a>
         </h3>
         <small class="post-meta">{{ post.date | date: date_format }}</small>
-        {{ post.excerpt }}
+        {{ post.templateContent | truncatewords: 50 }}
       </li>
       {%- endfor -%}
     </ul>
-    {% if paginator.total_pages > 1 %}
+    {% if pagination.pages.length > 1 %}
     <!-- Pagination links -->
     <div class="container readable pagination">
-      {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+      {% if pagination.href.previous %}
+        <a href="{{ pagination.href.previous | absolute_url }}" class="previous">Previous</a>
       {% endif %}
-      <span class="page_number ">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-      {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+      {% assign page_num = pagination.pageNumber | plus: 1 %}
+      <span class="page_number ">Page {{ page_num }} of {{ pagination.pages.length }}</span>
+      {% if pagination.href.next %}
+        <a href="{{ pagination.href.next | absolute_url }}" class="next">Next</a>
       {% endif %}
     </div>
     {% endif %}
@@ -52,8 +53,8 @@
     <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | absolute_url }}">via RSS</a></p>
   </div>
   <div class="container readable">
-    {%- include footer.html -%}
+    {%- include "footer.html" -%}
   </div>
-  {%- include blogStyler.html -%}
+  {%- include "blogStyler.html" -%}
 </body>
 </html>

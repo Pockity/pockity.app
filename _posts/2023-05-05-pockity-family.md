@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Pockity+ for Families
-date:   2023-05-05 07:45:00 +0530
+date: 2023-05-05T07:45:00+05:30
 categories: update,ios,release,feature
 bannerImage: /assets/images/posts/20230505-familysharing/banner
 excerpt: The Pockity+ upgrade is now available for Family Sharing with a simple upgrade path for users who have already purchased Pockity+.

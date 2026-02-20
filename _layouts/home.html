@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en-IN" }}">
-{%- include head.html -%}
+{%- include "head.html" -%}
 <link rel="me" href="https://social.dezinezync.com/@pockity" />
-<body class="{% if page.style %}{{ page.style }}{% endif %}">
-  {%- include nav.html -%}
+<body{% if style %} class="{{ style }}"{% endif %}>
+  {%- include "nav.html" -%}
   <header data-inviewport>
     <div class="container">
       <div id="logo-container">
@@ -13,17 +13,17 @@
       <h2 class="subhead">{{ site.description }}</h2>
     </div>
 
-    {%- include exploreButtons.html -%}
+    {%- include "exploreButtons.html" -%}
   </header>
   <main>
     {{ content }}
 
-    {%- include storebuttons.html -%}
+    {%- include "storebuttons.html" -%}
   </main>
 
-  {%- include support.html -%}
+  {%- include "support.html" -%}
 
-  {%- include footer.html -%}
+  {%- include "footer.html" -%}
   <script>
     const exploreButtons = document.querySelectorAll(`button[title="Explore Pockity's features"]`);
     const container = document.querySelector("main > picture + .container")

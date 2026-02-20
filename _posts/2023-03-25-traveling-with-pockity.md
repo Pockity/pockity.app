@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Traveling with Pockity
-date:   2023-03-28 09:00:00 +0530
+date: 2023-03-28T09:00:00+05:30
 categories: update
 bannerImage: /assets/images/posts/20230328-sgp/banner
 ---
