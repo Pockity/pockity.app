@@ -5,3 +5,5 @@ _site
 vendor
 .DS_Store
 /node_modules
+/assets/videos/ios/_sankey.mov
+/assets/videos/ios/_sankey-dark.mov
