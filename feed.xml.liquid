@@ -15,7 +15,9 @@ eleventyExcludeFromCollections: true
   <channel>
     <title>{{ site.title }}</title>
     <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <description>{{ site.description }}</description>
+    <description><![CDATA[
+      {{ site.description }}
+    ]]></description>
     <pubDate>{{ collections.posts | rssLastUpdatedDate }}</pubDate>
     <language>en</language>
     <image>
