@@ -1,16 +1,11 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  {%- if page.title -%}
-  <title>{{ page.title }} - {{ site.title }}</title>
-  <meta property="og:title" content="{{ page.title }} - {{ site.title }}" />
-  {%- else -%}
-  <title>{{ site.title }}</title>
-  <meta property="og:title" content="{{ site.title }}" />
-  {%- endif -%}
-  {%- if page.excerpt -%}
-  <meta name="description" content="{{ page.excerpt | strip_html | strip }}">
-  <meta property="og:description" content="{{ page.excerpt | strip_html | strip }}" />
+  <title>{{ title }}</title>
+  <meta property="og:title" content="{{ title }}" />
+  {%- if excerpt -%}
+  <meta name="description" content="{{ excerpt | markdown | strip_html | strip }}">
+  <meta property="og:description" content="{{ excerpt | markdown | strip_html | strip }}" />
   {%- elsif page.description -%}
   <meta name="description" content="{{ page.description }}">
   <meta property="og:description" content="{{ page.description }}" />

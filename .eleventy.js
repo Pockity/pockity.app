@@ -1,6 +1,7 @@
 const eleventySass = require("eleventy-sass");
 const rssPlugin = require("@11ty/eleventy-plugin-rss");
 const { DateTime } = require("luxon");
+const markdownIt = require("markdown-it");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventySass, {
@@ -41,7 +42,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets/fonts");
   eleventyConfig.addPassthroughCopy("assets/js");
   eleventyConfig.addPassthroughCopy("assets/videos");
-  eleventyConfig.addPassthroughCopy("CNAME");
 
   // Layout aliases
   eleventyConfig.addLayoutAlias("post", "post.html");
@@ -50,6 +50,23 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias("blog", "blog.html");
   eleventyConfig.addLayoutAlias("ios", "ios.html");
   eleventyConfig.addLayoutAlias("store", "store.html");
+
+  eleventyConfig.setFrontMatterParsingOptions({
+    excerpt: true,
+    excerpt_alias: 'excerpt',
+  });
+
+  // Initialize the Markdown parser
+  const md = new markdownIt({
+    html: true, // Enable HTML tags in source
+    breaks: true, // Convert '\n' in source into <br>
+    linkify: true // Autoconvert URL-like text to links
+  });
+
+  // Add the custom filter
+  eleventyConfig.addFilter("markdown", (content) => {
+    return md.render(content);
+  });
 
   return {
     dir: {

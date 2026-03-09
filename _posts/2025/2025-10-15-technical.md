@@ -7,7 +7,7 @@ bannerImageWebP: /assets/images/posts/20251018-1/banner
 ---
 
 If you've missed the release post or have come directly to this post, I'd like to urge you to read that [post](https://pockity.app/blog/2025-10-15/release/) as it covers highlights of what's about to be discussed here. 
-
+---
 ### Apple Intelligence 
 
 In the release post: I mentioned I wanted to take a different approach towards using Apple Intelligence in Pockity. I wanted to progressively enhance the user's experience without any impact on their day-to-day tasks in Pockity. I wanted to use the [SystemLanguageModels](https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel) in a way that's obvious, but completely opaque to the user. I wanted to remove the one click or tap that most apps employed. 
