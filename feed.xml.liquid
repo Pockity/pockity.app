@@ -43,6 +43,9 @@ eleventyExcludeFromCollections: true
         {%- if post.data.bannerImage -%}
         <media:content url="{{ post.data.bannerImage | append: '-1200w.png' | absolute_url }}" medium="image" lang="en"/>
         {%- endif -%}
+        {%- if post.data.bannerImageWebP -%}
+        <media:content url="{{ post.data.bannerImageWebP | append: '-1200w.png' | absolute_url }}" medium="image" lang="en"/>
+        {%- endif -%}
       </item>
     {% endfor %}
   </channel>
